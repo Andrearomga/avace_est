@@ -1,0 +1,263 @@
+﻿@page "/reportes"
+<div class="container">
+    <div class="row mb-4">
+        @foreach (var card in cards)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card @card.ColorClass text-white text-center">
+                    @if (!string.IsNullOrEmpty(card.Url))
+                    {
+                        <NavLink href="@card.Url" class="card-body d-flex flex-column align-items-center text-decoration-none text-white">
+                            <i class="@card.Icon custom-icon"></i> <!-- Icono de la tarjeta -->
+                            <h5 class="card-title mt-2">@card.Title</h5>
+                        </NavLink>
+                    }
+                    else
+                    {
+                        <div class="card-body">
+                            <i class="@card.Icon custom-icon"></i> <!-- Icono de la tarjeta -->
+                            <h5 class="card-title mt-2">@card.Title</h5>
+
+                            @if (card.Options != null && card.Options.Any())
+                            {
+                                <div class="dropdown">
+                                    <button class="btn btn-link " id="dropdownMenuButton_@card.Title" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton_@card.Title">
+                                        @foreach (var option in card.Options)
+                                        {
+                                            <li>
+                                                @if (option.SubOptions != null && option.SubOptions.Any())
+                                                {
+                                                    <div class="dropdown-submenu">
+                                                        <button class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                                                            <i class="@option.Icon"></i> <!-- Icono de la opción -->
+                                                            @option.Title
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            @foreach (var subOption in option.SubOptions)
+                                                            {
+                                                                <li>
+                                                                    <NavLink class="dropdown-item" href="@subOption.Url">
+                                                                        <i class="@subOption.Icon"></i> <!-- Icono del subopción -->
+                                                                        @subOption.Title
+                                                                    </NavLink>
+                                                                </li>
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <NavLink class="dropdown-item" href="@option.Url">
+                                                        <i class="@option.Icon"></i> <!-- Icono de la opción simple -->
+                                                        @option.Title
+                                                    </NavLink>
+                                                }
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+    public class CardModel
+    {
+        public string Title { get; set; }
+        public string ColorClass { get; set; }
+        public string Url { get; set; } // Propiedad para las tarjetas sin menú
+        public List<OptionModel> Options { get; set; }
+        public string Icon { get; set; }
+    }
+
+    public class OptionModel
+    {
+        public string Title { get; set; }
+        public string Url { get; set; }
+        public List<SubOptionModel> SubOptions { get; set; } // Lista de subopciones
+        public string Icon { get; set; }
+    }
+
+    public class SubOptionModel
+    {
+        public string Title { get; set; }
+        public string Url { get; set; }
+        public string Icon { get; set; }
+
+    }
+
+    private List<CardModel> cards = new List<CardModel>
+    {
+        new CardModel
+        {
+            Title = "Empeños",
+             Icon = "bi bi-file-earmark-text",
+            ColorClass = "bg-custom-blue",
+            Options = new List<OptionModel>
+            {   
+                new OptionModel { Title = "Historico", Url = "/resumen",  Icon = "bi bi-clock-history",},
+                new OptionModel { Title = "Detallado", Url = "/resumen", Icon = "bi bi-file-earmark-text"},
+                new OptionModel { Title = "Inventario", Url = "/resumen", Icon = "bi bi-box"},
+                new OptionModel { Title = "Resumen", Url = "/resumen",  Icon = "bi bi-clipboard-data" },
+                new OptionModel { Title = "Contratos", Url = "/resumen", Icon = "bi bi-file-earmark-text", },
+                new OptionModel { Title = "Pase a Remate", Url = "/resumen", Icon = "bi bi-currency-exchange" },
+                new OptionModel
+                {
+                    Title = "Empeño",
+                     Icon = "bi bi-piggy-bank",
+                    SubOptions = new List<SubOptionModel>
+                    {
+                        new SubOptionModel { Title = "Empeños", Url = "/opcionA" },
+                        new SubOptionModel { Title = "Resumen", Url = "/opcionB" }
+                    }
+                },
+                new OptionModel
+                {
+                    Title = "Desempeño",
+                    Icon = "bi bi-graph-up",
+                    SubOptions = new List<SubOptionModel>
+                    {
+                        new SubOptionModel { Title = "Resumen", Url = "/opcionA" },
+                        new SubOptionModel { Title = "Detallado", Url = "/opcionB" },
+                         new SubOptionModel { Title = "Extemporaneo", Url = "/opcionB" }
+                    }
+
+                },
+                 new OptionModel
+                {
+                    Title = "Refrendos",
+                    Icon = "bi bi-arrow-repeat",
+                    SubOptions = new List<SubOptionModel>
+                    {
+                        new SubOptionModel { Title = "Resumen", Url = "/opcionA" },
+                        new SubOptionModel { Title = "Detallado", Url = "/opcionB" },
+                        new SubOptionModel { Title = "Extemporaneo", Url = "/opcionB" },
+                         new SubOptionModel { Title = "Compra Días", Url = "/opcionB" }
+                    }
+
+                }
+            }
+        },
+        new CardModel
+        {
+            Title = "Financiero",
+             Icon = "bi bi-currency-dollar",
+            ColorClass = "bg-custom-green",
+            Options = new List<OptionModel>
+            {
+                new OptionModel { Title = "Auxiliar", Url = "/opcionA" , Icon = "bi bi-clock-history"},
+                new OptionModel { Title = "Auxiliar Personalizado", Url = "/opcionB", Icon = "bi bi-clock-history" },
+                new OptionModel { Title = "Contable", Url = "/opcionB",  Icon = "bi-currency-exchange" },
+                new OptionModel { Title = "Auditoria", Url = "/opcionB",  Icon = "bi-bank" },
+                new OptionModel { Title = "Gastos", Url = "/opcionB",  Icon = "bi-currency-exchange" },
+                new OptionModel
+                {
+                    Title = "Ingresos",
+                    Icon = "bi bi-currency-dollar",
+                    SubOptions = new List<SubOptionModel>
+                    {
+                        new SubOptionModel { Title = "Resumen", Url = "/opcionA" },
+                        new SubOptionModel { Title = "Detallado", Url = "/opcionB" }
+                    }
+                },
+                 new OptionModel { Title = "Estados Financieros", Url = "/opcionB",  Icon = "bi bi-file-earmark-text"},
+
+            }
+        },
+         new CardModel
+        {
+            Title = "Monitoreo",
+             Icon = "bi bi-search",
+            ColorClass = "bg-custom-purple",
+            Options = new List<OptionModel>
+            {
+                new OptionModel { Title = "Re-Impresiones", Url = "/opcionA" , Icon = "bi bi-printer"},
+                new OptionModel { Title = "Movimientos por Horario", Url = "/opcionB", Icon = "bi bi-clock" },
+                new OptionModel { Title = "Autorizaciones", Url = "/opcionB",   Icon = "bi bi-check-circle" },
+                new OptionModel { Title = "Partidas en Bóveda", Url = "/opcionB",  Icon = "bi bi-safe" },
+                new OptionModel { Title = "Aseguradora", Url = "/opcionB",  Icon = "bi bi-shield", },
+                new OptionModel { Title = "Cancelaciones", Url = "/opcionB",  Icon = "bi bi-x-circle"},
+                new OptionModel { Title = "Clientes", Url = "/opcionB",  Icon = "bi bi-person"},
+                new OptionModel { Title = "Clientes Duplicados", Url = "/opcionB",  Icon = "bi bi-person-x"},
+                new OptionModel { Title = "Cuotas", Url = "/opcionB",   Icon = "bi bi-cash",},
+                new OptionModel { Title = "Pagos con Tarjeta", Url = "/opcionB",   Icon = "bi bi-credit-card"}
+
+
+            }
+        },new CardModel
+        {
+            Title = "Contratos Promedios",
+            Icon = "bi bi-file-earmark-text",
+            ColorClass = "bg-custom-pink",
+            Options = new List<OptionModel>
+            {
+                new OptionModel { Title = "Empeños", Url = "/opcionA" ,  Icon = "bi bi-piggy-bank"},
+                new OptionModel { Title = "Desempeños", Url = "/opcionB", Icon = "bi bi-graph-up" },
+                new OptionModel { Title = "Refrendos", Url = "/opcionB",   Icon = "bi bi-arrow-repeat"},
+                
+
+            }
+        },new CardModel
+        {
+            Title = "Graficos",
+             Icon = "bi bi-bar-chart",
+            ColorClass = "bg-custom-blue-light",
+            Options = new List<OptionModel>
+            {
+                new OptionModel { Title = "Contratos tipo Tasa", Url = "/opcionA" ,   Icon = "bi bi-percent",},
+                new OptionModel { Title = "Contratos Vencidos", Url = "/opcionB", Icon = "bi bi-calendar-x", },
+                new OptionModel { Title = "Contratos por status", Url = "/opcionB",   Icon = "bi bi-list-task",},
+                new OptionModel { Title = "Empeños por Mes", Url = "/opcionB",   Icon = "bi bi-calendar-range",},
+                new OptionModel { Title = "Empeños por Valuador", Url = "/opcionB",   Icon = "bi bi-person-badge",},
+                new OptionModel { Title = "Medios Difusión", Url = "/opcionB",    Icon = "bi bi-broadcast",},
+
+
+
+            }
+        }
+        ,new CardModel
+        {
+            Title = "Clientes Frecuentes",
+              Icon = "bi bi-search",
+            ColorClass = "bg-custom-red",
+            Options = new List<OptionModel>
+            {
+                new OptionModel { Title = "Movimientos", Url = "/opcionA" ,    Icon = "bi bi-arrows-move",},
+                new OptionModel { Title = "Estados de Cuenta", Url = "/opcionB", Icon = "bi bi-journal-text", },
+                
+
+
+
+            }
+        },
+        new CardModel
+        {
+            Title = "Resumen Operaciones",
+            Icon = "bi bi-arrow-repeat",
+            ColorClass = "bg-custom-yellow",
+            Url = "/resumen-operaciones" // Tarjeta sin submenú
+        },
+         new CardModel
+        {
+            Title = "Movimientos en Caja",
+            Icon = "bi bi-cash-stack",
+            ColorClass = "bg-custom-gr",
+            Url = "/movimiento-caja" // Tarjeta sin submenú
+        }, new CardModel
+        {
+            Title = "Reporte Corporativo",
+             Icon = "bi bi-file-earmark-text",
+            ColorClass = "bg-custom-as",
+            Url = "/reporte-corporativo" // Tarjeta sin submenú
+        }
+    };
+}

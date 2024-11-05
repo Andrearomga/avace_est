@@ -1,0 +1,107 @@
+﻿
+.custom-card {
+    border-radius: 20px; /* Bordes redondeados */
+    height: 150px; /* Altura fija para todas las tarjetas */
+    width: 240px;
+   margin: 40px;
+}
+
+    
+/* Colores personalizados para las tarjetas */
+.bg-custom-blue {
+    background-color: #3B82F6; /* Azul */
+}
+
+.bg-custom-green {
+    background-color: #22C55E; /* Verde */
+}
+
+.bg-custom-purple {
+    background-color: #A855F7; /* Púrpura */
+}
+
+.bg-custom-pink {
+    background-color: #EC4899; /* Rosa */
+}
+
+.bg-custom-blue-light {
+    background-color: #6366F1; /* Azul claro */
+}
+
+.bg-custom-red {
+    background-color: #EF4444; /* Rojo */
+}
+.bg-custom-yellow {
+    background-color: #EAB308;
+}
+
+.bg-custom-gr {
+    background-color: #14B8A6;
+}
+
+.bg-custom-as {
+    background-color: #84CC16;
+}
+
+
+
+
+
+
+
+
+    /* Estilos para el ícono de las tarjetas */
+    .custom-icon {
+        font-size: 2rem; /* Tamaño del ícono */
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+
+
+
+.btn-link {
+    position: absolute; /* Posicionamiento absoluto */
+    top: -90px; /* Distancia desde la parte superior */
+    right: -5px; /* Distancia desde la derecha */
+    color: #ffffff; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin relleno */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+
+    .btn-link:focus, .btn-link:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+
+
+/* Estilos para los enlaces en el menú desplegable */
+.dropdown-menu {
+    min-width: 10rem; /* Ancho mínimo del menú */
+}
+
+
+
+
+
+/* Estilos para el menú desplegable */
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu .dropdown-menu {
+        left: 100%; /* Mueve el submenú a la derecha */
+        top: 0;
+        display: none; /* Inicialmente oculto */
+    }
+
+    .dropdown-submenu:hover .dropdown-menu {
+        display: block; /* Muestra el submenú al pasar el mouse */
+    }
+
+/* Ajustes adicionales para los íconos y los botones */
+.dropdown-item.dropdown-toggle {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la opción con submenú */
+}

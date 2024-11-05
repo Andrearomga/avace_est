@@ -1,0 +1,555 @@
+/* _content/web_mysonda/Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-onq7zbiqr2] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sidebar[b-onq7zbiqr2] {
+    background-color: #00AA63;
+    border-radius: 20px;
+    margin-top: 60px;
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 640.98px) {
+    .top-row[b-onq7zbiqr2] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-onq7zbiqr2]  a, .top-row[b-onq7zbiqr2]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-onq7zbiqr2] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-onq7zbiqr2] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+    }
+
+
+
+    #blazor-error-ui[b-onq7zbiqr2] {
+        background: lightyellow;
+        bottom: 0;
+        box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+        display: none;
+        left: 0;
+        padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+        #blazor-error-ui .dismiss[b-onq7zbiqr2] {
+            cursor: pointer;
+            position: absolute;
+            right: 0.75rem;
+            top: 0.5rem;
+        }
+}
+
+
+
+
+/* _content/web_mysonda/Components/Layout/NavMenu.razor.rz.scp.css */
+
+
+.navbar-brand[b-drjnpsa39q] {
+    font-size: 1.1rem;
+}
+
+.bi[b-drjnpsa39q] {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.logo[b-drjnpsa39q] {
+    
+    margin-top: -60px;
+    align-items: center;
+    
+}
+    .logo img[b-drjnpsa39q] {
+        width: 80%; 
+        height: auto;
+    }
+    
+
+
+.bi-list-nested-nav-menu[b-drjnpsa39q] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.nav-item[b-drjnpsa39q] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-drjnpsa39q] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-drjnpsa39q] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-drjnpsa39q]  .nav-link {
+        color: #d7d7d7;
+        background: none;
+        border: none;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+.nav-item[b-drjnpsa39q]  a.active {
+    background-color: rgba(255,255,255,0.37);
+    color: white;
+}
+
+.nav-item[b-drjnpsa39q]  .nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+
+/* _content/web_mysonda/Components/Pages/MovimientoCaja.razor.rz.scp.css */
+.movimiento-caja[b-n2vk7527ha] {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
+    border-radius: 40px; /* Esquinas redondeadas de 40px */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    width: 723px;
+    height: 450px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -900px; /* Ajuste de margen si es necesario */
+}
+
+.header[b-n2vk7527ha] {
+    position: relative;
+    background-color: #5A86A3;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+    .header h3[b-n2vk7527ha] {
+        color: #000000;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+.favorito[b-n2vk7527ha] {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+    .favorito:hover path[b-n2vk7527ha] {
+        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
+    }
+
+
+.form-content-right[b-n2vk7527ha] {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group[b-n2vk7527ha] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-picker[b-n2vk7527ha] {
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+    border: 0.5px solid #716D6D;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.button-group-right[b-n2vk7527ha] {
+    display: flex;
+    gap: 70px;
+    margin-right: -200px;
+    margin-top: 100px;
+}
+
+.btn-cancelar[b-n2vk7527ha], .btn-imprimir[b-n2vk7527ha] {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-cancelar[b-n2vk7527ha] {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-imprimir[b-n2vk7527ha] {
+    background-color: #000000;
+    color: #fff;
+}
+/* _content/web_mysonda/Components/Pages/ReporteCorporativo.razor.rz.scp.css */
+.reporte-corporativo[b-zrs0drmaec] {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
+    border-radius: 40px; /* Esquinas redondeadas de 40px */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    width: 723px;
+    height: 450px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -900px; /* Ajuste de margen si es necesario */
+}
+
+.header[b-zrs0drmaec] {
+    position: relative;
+    background-color: #5A86A3;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+    .header h3[b-zrs0drmaec] {
+        color: #000000;
+        margin: 0;
+        font-size: 22px; 
+        font-weight: 600; 
+    }
+
+.favorito[b-zrs0drmaec] {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+    .favorito:hover path[b-zrs0drmaec] {
+        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
+    }
+
+.button-group-right[b-zrs0drmaec] {
+    display: flex;
+    gap: 70px;
+    margin-right: -200px;
+    margin-top: 50px;
+}
+
+.btn-cancelar[b-zrs0drmaec], .btn-imprimir[b-zrs0drmaec] {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-cancelar[b-zrs0drmaec] {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-imprimir[b-zrs0drmaec] {
+    background-color: #000000;
+    color: #fff;
+}
+
+.form-container.box[b-zrs0drmaec] {
+    border: 1px solid #B7BABB;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+}
+
+.input-group[b-zrs0drmaec] {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-text[b-zrs0drmaec] {
+    flex: 1;
+    padding: 5px;
+}
+
+.icon-save[b-zrs0drmaec] {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.date-container[b-zrs0drmaec] {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.date-field[b-zrs0drmaec] {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+/* _content/web_mysonda/Components/Pages/Reportes.razor.rz.scp.css */
+
+.custom-card[b-m77me0famc] {
+    border-radius: 20px; /* Bordes redondeados */
+    height: 150px; /* Altura fija para todas las tarjetas */
+    width: 240px;
+   margin: 40px;
+}
+
+    
+/* Colores personalizados para las tarjetas */
+.bg-custom-blue[b-m77me0famc] {
+    background-color: #3B82F6; /* Azul */
+}
+
+.bg-custom-green[b-m77me0famc] {
+    background-color: #22C55E; /* Verde */
+}
+
+.bg-custom-purple[b-m77me0famc] {
+    background-color: #A855F7; /* Púrpura */
+}
+
+.bg-custom-pink[b-m77me0famc] {
+    background-color: #EC4899; /* Rosa */
+}
+
+.bg-custom-blue-light[b-m77me0famc] {
+    background-color: #6366F1; /* Azul claro */
+}
+
+.bg-custom-red[b-m77me0famc] {
+    background-color: #EF4444; /* Rojo */
+}
+.bg-custom-yellow[b-m77me0famc] {
+    background-color: #EAB308;
+}
+
+.bg-custom-gr[b-m77me0famc] {
+    background-color: #14B8A6;
+}
+
+.bg-custom-as[b-m77me0famc] {
+    background-color: #84CC16;
+}
+
+
+
+
+
+
+
+
+    /* Estilos para el ícono de las tarjetas */
+    .custom-icon[b-m77me0famc] {
+        font-size: 2rem; /* Tamaño del ícono */
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+
+
+
+.btn-link[b-m77me0famc] {
+    position: absolute; /* Posicionamiento absoluto */
+    top: -90px; /* Distancia desde la parte superior */
+    right: -5px; /* Distancia desde la derecha */
+    color: #ffffff; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin relleno */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+
+    .btn-link:focus[b-m77me0famc], .btn-link:active[b-m77me0famc] {
+        outline: none;
+        box-shadow: none;
+    }
+
+
+
+/* Estilos para los enlaces en el menú desplegable */
+.dropdown-menu[b-m77me0famc] {
+    min-width: 10rem; /* Ancho mínimo del menú */
+}
+
+
+
+
+
+/* Estilos para el menú desplegable */
+.dropdown-submenu[b-m77me0famc] {
+    position: relative;
+}
+
+    .dropdown-submenu .dropdown-menu[b-m77me0famc] {
+        left: 100%; /* Mueve el submenú a la derecha */
+        top: 0;
+        display: none; /* Inicialmente oculto */
+    }
+
+    .dropdown-submenu:hover .dropdown-menu[b-m77me0famc] {
+        display: block; /* Muestra el submenú al pasar el mouse */
+    }
+
+/* Ajustes adicionales para los íconos y los botones */
+.dropdown-item.dropdown-toggle[b-m77me0famc] {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la opción con submenú */
+}
+/* _content/web_mysonda/Components/Pages/ResumenOperaciones.razor.rz.scp.css */
+.resumen-operaciones[b-zguovx0gvn] {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
+    border-radius: 40px; /* Esquinas redondeadas de 40px */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    width: 723px;
+    height: 450px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -900px; /* Ajuste de margen si es necesario */
+}
+
+.header[b-zguovx0gvn] {
+    position: relative;
+    background-color: #5A86A3;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+    .header h3[b-zguovx0gvn] {
+        color: #000000;
+        margin: 0;
+        font-size: 22px; 
+        font-weight: 600; 
+    }
+
+.favorito[b-zguovx0gvn] {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+    .favorito:hover path[b-zguovx0gvn] {
+        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
+    }
+
+
+.form-content-right[b-zguovx0gvn] {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group[b-zguovx0gvn] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.date-picker[b-zguovx0gvn] {
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+    border: 0.5px solid #716D6D;
+    border-radius: 8px;
+    text-align: center;
+ 
+}
+
+.button-group-right[b-zguovx0gvn] {
+    display: flex;
+    gap: 70px;
+    margin-right: -200px;
+    margin-top: 100px;
+}
+
+.btn-cancelar[b-zguovx0gvn], .btn-imprimir[b-zguovx0gvn] {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-cancelar[b-zguovx0gvn] {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-imprimir[b-zguovx0gvn] {
+    background-color: #000000;
+    color: #fff;
+}

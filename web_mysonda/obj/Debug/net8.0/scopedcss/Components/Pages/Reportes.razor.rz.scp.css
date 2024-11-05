@@ -1,0 +1,107 @@
+
+.custom-card[b-m77me0famc] {
+    border-radius: 20px; /* Bordes redondeados */
+    height: 150px; /* Altura fija para todas las tarjetas */
+    width: 240px;
+   margin: 40px;
+}
+
+    
+/* Colores personalizados para las tarjetas */
+.bg-custom-blue[b-m77me0famc] {
+    background-color: #3B82F6; /* Azul */
+}
+
+.bg-custom-green[b-m77me0famc] {
+    background-color: #22C55E; /* Verde */
+}
+
+.bg-custom-purple[b-m77me0famc] {
+    background-color: #A855F7; /* Púrpura */
+}
+
+.bg-custom-pink[b-m77me0famc] {
+    background-color: #EC4899; /* Rosa */
+}
+
+.bg-custom-blue-light[b-m77me0famc] {
+    background-color: #6366F1; /* Azul claro */
+}
+
+.bg-custom-red[b-m77me0famc] {
+    background-color: #EF4444; /* Rojo */
+}
+.bg-custom-yellow[b-m77me0famc] {
+    background-color: #EAB308;
+}
+
+.bg-custom-gr[b-m77me0famc] {
+    background-color: #14B8A6;
+}
+
+.bg-custom-as[b-m77me0famc] {
+    background-color: #84CC16;
+}
+
+
+
+
+
+
+
+
+    /* Estilos para el ícono de las tarjetas */
+    .custom-icon[b-m77me0famc] {
+        font-size: 2rem; /* Tamaño del ícono */
+        margin-bottom: 10px; /* Espaciado inferior */
+    }
+
+
+
+.btn-link[b-m77me0famc] {
+    position: absolute; /* Posicionamiento absoluto */
+    top: -90px; /* Distancia desde la parte superior */
+    right: -5px; /* Distancia desde la derecha */
+    color: #ffffff; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin relleno */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+
+    .btn-link:focus[b-m77me0famc], .btn-link:active[b-m77me0famc] {
+        outline: none;
+        box-shadow: none;
+    }
+
+
+
+/* Estilos para los enlaces en el menú desplegable */
+.dropdown-menu[b-m77me0famc] {
+    min-width: 10rem; /* Ancho mínimo del menú */
+}
+
+
+
+
+
+/* Estilos para el menú desplegable */
+.dropdown-submenu[b-m77me0famc] {
+    position: relative;
+}
+
+    .dropdown-submenu .dropdown-menu[b-m77me0famc] {
+        left: 100%; /* Mueve el submenú a la derecha */
+        top: 0;
+        display: none; /* Inicialmente oculto */
+    }
+
+    .dropdown-submenu:hover .dropdown-menu[b-m77me0famc] {
+        display: block; /* Muestra el submenú al pasar el mouse */
+    }
+
+/* Ajustes adicionales para los íconos y los botones */
+.dropdown-item.dropdown-toggle[b-m77me0famc] {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la opción con submenú */
+}
