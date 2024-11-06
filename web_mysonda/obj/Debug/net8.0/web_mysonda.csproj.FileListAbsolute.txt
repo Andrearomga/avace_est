@@ -32,3 +32,4 @@ C:\Users\andre\source\repos\web_mysonda\web_mysonda\obj\Debug\net8.0\scopedcss\C
 C:\Users\andre\source\repos\web_mysonda\web_mysonda\obj\Debug\net8.0\scopedcss\Components\Pages\ResumenOperaciones.razor.rz.scp.css
 C:\Users\andre\source\repos\web_mysonda\web_mysonda\obj\Debug\net8.0\scopedcss\Components\Pages\MovimientoCaja.razor.rz.scp.css
 C:\Users\andre\source\repos\web_mysonda\web_mysonda\obj\Debug\net8.0\scopedcss\Components\Pages\ReporteCorporativo.razor.rz.scp.css
+C:\Users\andre\source\repos\web_mysonda\web_mysonda\obj\Debug\net8.0\scopedcss\Components\Pages\RFinanciero_auditoria.razor.rz.scp.css

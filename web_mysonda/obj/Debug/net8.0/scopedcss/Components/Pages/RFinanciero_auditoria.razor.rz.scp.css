@@ -1,0 +1,215 @@
+.reporte-auditoria[b-rrbbuocqh6] {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.card[b-rrbbuocqh6] {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
+    border-radius: 40px; /* Esquinas redondeadas de 40px */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    width: 793px;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.header[b-rrbbuocqh6] {
+    position: relative;
+    background-color: #5A86A3;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+    .header h3[b-rrbbuocqh6] {
+        color: #000000;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+.favorito[b-rrbbuocqh6] {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+    .favorito:hover path[b-rrbbuocqh6] {
+        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
+    }
+
+.filters[b-rrbbuocqh6] {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.filter label[b-rrbbuocqh6] {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter input[b-rrbbuocqh6] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search[b-rrbbuocqh6] {
+    margin-bottom: 15px;
+}
+
+    .search input[b-rrbbuocqh6] {
+        width: 280%;
+        margin-left: -90%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+.table-container[b-rrbbuocqh6] {
+    max-width: 100%;
+    max-height: 200px; /* Ajusta la altura máxima para el scroll vertical */
+    overflow-x: auto; /* Scroll horizontal */
+    overflow-y: auto; /* Scroll vertical */
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.report-table[b-rrbbuocqh6] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .report-table th[b-rrbbuocqh6], .report-table td[b-rrbbuocqh6] {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        white-space: nowrap; /* Evita que el contenido se ajuste en múltiples líneas */
+    }
+
+    .report-table th[b-rrbbuocqh6] {
+        background-color: #E0E5EB;
+        color: #333;
+    }
+
+    .report-table tbody tr:nth-child(even)[b-rrbbuocqh6] {
+        background-color: #f9f9f9;
+    }
+
+.button-group-right[b-rrbbuocqh6] {
+    display: flex;
+    gap: 70px;
+    margin-right: -200px;
+    margin-top: 50px;
+}
+
+.btn-cancelar[b-rrbbuocqh6], .btn-imprimir[b-rrbbuocqh6] {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-cancelar[b-rrbbuocqh6] {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-imprimir[b-rrbbuocqh6] {
+    background-color: #000000;
+    color: #fff;
+}
+/* Estilos generales */
+/* Estilos básicos */
+/* Estilos básicos */
+.tab-bar[b-rrbbuocqh6] {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 52%; /* Igual al tamaño de .tabs-container */
+    border-radius: 10px;
+    right: -295px;
+    margin-top: 20px;
+    background-color: #5A86A3; /* Fondo azul */
+}
+
+.tabs-container[b-rrbbuocqh6] {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor padre */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.tabs[b-rrbbuocqh6] {
+    display: flex;
+    transition: transform 0.5s ease;
+   
+}
+.tab[b-rrbbuocqh6] {
+    padding: 5px 10px; /* Tamaño reducido de relleno */
+    cursor: pointer;
+    flex: 1 0 auto;
+    text-align: center;
+    min-width: 12%; /* Ajusta para que las pestañas no sean demasiado pequeñas */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 5px; /* Espacio entre cada botón */
+
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Color de texto oscuro para contraste */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade una ligera sombra */
+}
+
+
+/* Estilo para las flechas */
+.arrow[b-rrbbuocqh6] {
+    background: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover[b-rrbbuocqh6] {
+    color: #007bff; /* Color de las flechas al pasar el cursor */
+}
+
+/* Ocultar los checkboxes */
+input[type="radio"][b-rrbbuocqh6] {
+    display: none;
+}
+
+/* Deslizar hacia la primera sección */
+#slide1:checked ~ .tabs-container .tabs[b-rrbbuocqh6] {
+    transform: translateX(0);
+}
+
+/* Deslizar hacia la segunda sección */
+#slide2:checked ~ .tabs-container .tabs[b-rrbbuocqh6] {
+    transform: translateX(-100%); /* Mueve a la segunda mitad de la barra */
+}

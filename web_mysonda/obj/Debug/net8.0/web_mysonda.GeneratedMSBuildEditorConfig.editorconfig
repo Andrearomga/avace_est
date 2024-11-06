@@ -73,3 +73,7 @@ build_metadata.AdditionalFiles.CssScope = b-m77me0famc
 [C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/ResumenOperaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXN1bWVuT3BlcmFjaW9uZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zguovx0gvn
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RFinanciero_auditoria.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSRmluYW5jaWVyb19hdWRpdG9yaWEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rrbbuocqh6

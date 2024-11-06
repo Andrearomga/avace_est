@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Components\Pages\FinancieroAuditoriarazor.razor" />
     <Content Remove="Components\Pages\Tarjeta.razor" />
   </ItemGroup>
 

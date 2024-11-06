@@ -1,0 +1,215 @@
+﻿.reporte-auditoria {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
+    border-radius: 40px; /* Esquinas redondeadas de 40px */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    width: 793px;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.header {
+    position: relative;
+    background-color: #5A86A3;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+    .header h3 {
+        color: #000000;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+.favorito {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+    .favorito:hover path {
+        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
+    }
+
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.filter label {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search {
+    margin-bottom: 15px;
+}
+
+    .search input {
+        width: 280%;
+        margin-left: -90%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+.table-container {
+    max-width: 100%;
+    max-height: 200px; /* Ajusta la altura máxima para el scroll vertical */
+    overflow-x: auto; /* Scroll horizontal */
+    overflow-y: auto; /* Scroll vertical */
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .report-table th, .report-table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        white-space: nowrap; /* Evita que el contenido se ajuste en múltiples líneas */
+    }
+
+    .report-table th {
+        background-color: #E0E5EB;
+        color: #333;
+    }
+
+    .report-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+.button-group-right {
+    display: flex;
+    gap: 70px;
+    margin-right: -200px;
+    margin-top: 50px;
+}
+
+.btn-cancelar, .btn-imprimir {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-cancelar {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-imprimir {
+    background-color: #000000;
+    color: #fff;
+}
+/* Estilos generales */
+/* Estilos básicos */
+/* Estilos básicos */
+.tab-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 52%; /* Igual al tamaño de .tabs-container */
+    border-radius: 10px;
+    right: -295px;
+    margin-top: 20px;
+    background-color: #5A86A3; /* Fondo azul */
+}
+
+.tabs-container {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor padre */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.tabs {
+    display: flex;
+    transition: transform 0.5s ease;
+   
+}
+.tab {
+    padding: 5px 10px; /* Tamaño reducido de relleno */
+    cursor: pointer;
+    flex: 1 0 auto;
+    text-align: center;
+    min-width: 12%; /* Ajusta para que las pestañas no sean demasiado pequeñas */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 5px; /* Espacio entre cada botón */
+
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Color de texto oscuro para contraste */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade una ligera sombra */
+}
+
+
+/* Estilo para las flechas */
+.arrow {
+    background: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #007bff; /* Color de las flechas al pasar el cursor */
+}
+
+/* Ocultar los checkboxes */
+input[type="radio"] {
+    display: none;
+}
+
+/* Deslizar hacia la primera sección */
+#slide1:checked ~ .tabs-container .tabs {
+    transform: translateX(0);
+}
+
+/* Deslizar hacia la segunda sección */
+#slide2:checked ~ .tabs-container .tabs {
+    transform: translateX(-100%); /* Mueve a la segunda mitad de la barra */
+}
