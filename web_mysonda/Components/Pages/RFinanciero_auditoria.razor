@@ -1,54 +1,19 @@
 ﻿@page "/reporte-auditoria"
 
-
-
 <div class="reporte-auditoria">
-   <div class="tab-bar">
-    <!-- Checkboxes ocultos para controlar el desplazamiento -->
-    <input type="radio" name="slide" id="slide1" checked>
-    <input type="radio" name="slide" id="slide2">
-    <input type="radio" name="slide" id="slide3">
-
-    <!-- Flecha izquierda fija al inicio de la barra -->
-    <label for="slide1" class="arrow left-arrow"><i class="fas fa-chevron-left"></i></label>
-
-    <!-- Contenedor de pestañas -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <!-- Primera sección de pestañas -->
-            <button class="tab active">Auditoría</button>
-            <button class="tab">Gastos</button>
-            <button class="tab">Ingresos</button>
-            <button class="tab">Estados Financieros</button>
-            <button class="tab">Presupuesto</button>
-
-            <!-- Segunda sección de pestañas -->
-            <button class="tab">Balances</button>
-            <button class="tab">Proyectos</button>
-            <button class="tab">Indicadores</button>
-            <button class="tab">Inversiones</button>
-            <button class="tab">Recursos Humanos</button>
-
-               
-        </div>
+   
+    <!-- Uso del componente TabBar -->
+    <div class="tab-bar-container">
+        <TabBar TabItems="@tabItems" ActiveTab="@selectedTab" OnTabSelected="OnTabSelected" />
     </div>
-
-    <!-- Flecha derecha fija al final de la barra -->
-    <label for="slide2" class="arrow right-arrow"><i class="fas fa-chevron-right"></i></label>
-</div>
-
-
-
-
 
     <div class="card">
         <div class="header">
-            <h3>Reporte Auditoria</h3>
+            <h3>Detalles del Reporte</h3>
             <svg class="favorito" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
                       stroke="#000000" stroke-width="2" fill="none" />
             </svg>
-
         </div>
 
         <div class="filters">
@@ -117,58 +82,61 @@
                         <td>$102.00</td>
                         <td>2</td>
                     </tr>
-                    <tr>
-                        <td>Venta</td>
-                        <td>001</td>
-                        <td>JD</td>
-                        <td>1001</td>
-                        <td>$100.00</td>
-                        <td>1</td>
-                        <td>Devolución</td>
-                        <td>002</td>
-                        <td>AS</td>
-                        <td>1002</td>
-                        <td>$102.00</td>
-                        <td>2</td>
-                    </tr>
-                    <!-- Más filas pueden ser agregadas aquí -->
                 </tbody>
             </table>
-        </div>
-
-        <div class="button-group-right">
-            <button @onclick="Cancelar" class="btn-cancelar">Cancelar</button>
-            <button @onclick="Imprimir" class="btn-imprimir">Imprimir</button>
         </div>
     </div>
 </div>
 
 @code {
-    private DateTime fechaInicial = DateTime.Now;
-    private DateTime fechaFinal = DateTime.Now.AddDays(1);
+    private List<string> tabItems = new List<string>
+    {
+         "Auditoria",
+        "Gastos",
+        "Ingresos",
+        "Estados Financieros",
+        "Presupuesto",
+        "Balances",
+        "Proyectos",
+        "Indicadores",
+        "Inversiones",
+        "Recursos Humanos",
+        
+    };
+
+    private string selectedTab = "Auditoria"; // Pestaña por defecto seleccionada
+
+    private void OnTabSelected(string selectedTab)
+    {
+        this.selectedTab = selectedTab;
+        Console.WriteLine($"Tab seleccionado: {selectedTab}");
+    }
 
     private void Cancelar()
     {
-        // Acción de cancelación
+        try
+        {
+            // Acción de cancelación
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Cancelar: {ex.Message}");
+        }
     }
 
     private void Imprimir()
     {
-        // Acción de impresión
-    }
-
-    private ElementReference tabsContainer;
-
-    [Inject]
-    IJSRuntime JS { get; set; }
-
-    private async Task ScrollLeft()
-    {
-        await JS.InvokeVoidAsync("scrollTabs", tabsContainer, -100); // Desplaza a la izquierda 100px
-    }
-
-    private async Task ScrollRight()
-    {
-        await JS.InvokeVoidAsync("scrollTabs", tabsContainer, 100); // Desplaza a la derecha 100px
+        try
+        {
+            // Acción de impresión
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Imprimir: {ex.Message}");
+        }
     }
 }
+
+
+ "Auditoría", "Gastos", "Ingresos", "Estados Financieros", "Presupuesto",
+        "Balances", "Proyectos", "Indicadores", "Inversiones", "Recursos Humanos"

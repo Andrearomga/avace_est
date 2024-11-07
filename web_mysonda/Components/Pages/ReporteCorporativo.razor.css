@@ -1,112 +1,25 @@
-﻿.reporte-corporativo {
-    background-color: #ffffff;
-    padding: 30px;
-    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
-    border-radius: 40px; /* Esquinas redondeadas de 40px */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    width: 723px;
-    height: 450px;
-    margin: 100px auto;
+﻿.ruta-input-container {
+    margin-top: 300px; /* Espaciado hacia abajo para no interrumpir otros elementos */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: -900px; /* Ajuste de margen si es necesario */
+    right: -330px;
+    align-items: flex-start;
+    position: relative; /* Asegura que el contenedor tenga un contexto para el z-index */
+    z-index: 100; /* Este valor es para asegurarse de que el input esté por encima de otros elementos */
 }
 
-.header {
-    position: relative;
-    background-color: #5A86A3;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: center;
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-    .header h3 {
-        color: #000000;
-        margin: 0;
-        font-size: 22px; 
-        font-weight: 600; 
-    }
-
-.favorito {
-    position: absolute;
-    top: 10px;
-    right: -50px;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-
-    .favorito:hover path {
-        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
-    }
-
-.button-group-right {
-    display: flex;
-    gap: 70px;
-    margin-right: -200px;
-    margin-top: 50px;
-}
-
-.btn-cancelar, .btn-imprimir {
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+.ruta-label {
     font-size: 16px;
-    width: 180px;
-    height: 40px;
-    font-weight: 600;
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
 }
 
-.btn-cancelar {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 1px solid #000000;
-}
-
-.btn-imprimir {
-    background-color: #000000;
-    color: #fff;
-}
-
-.form-container.box {
+.ruta-input {
+    width: 200%; /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    border-radius: 5px;
     border: 1px solid #B7BABB;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 8px;
-    background-color: #F9F9F9;
-}
-
-.input-group {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.input-text {
-    flex: 1;
-    padding: 5px;
-}
-
-.icon-save {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 5px;
-    margin-left: 5px;
-}
-
-.date-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.date-field {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    position: relative; /* Asegura que el input también tenga un contexto para z-index */
+    z-index: 101; /* Asegura que el input esté por encima del contenedor */
 }

@@ -1,0 +1,70 @@
+﻿@* TabBar.razor *@
+<div class="tab-bar">
+    <button @onclick="PreviousTab" disabled="@IsFirstTab" class="arrow left-arrow">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="tabs-container">
+        <div class="tabs">
+            @foreach (var tab in TabItems)
+            {
+                <button class="tab @(tab == ActiveTab ? "active" : "")" @onclick="() => SelectTab(tab)">
+                    @tab
+                </button>
+            }
+        </div>
+    </div>
+
+    <button @onclick="NextTab" disabled="@IsLastTab" class="arrow right-arrow">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>
+
+@code {
+    [Parameter]
+    public List<string> TabItems { get; set; } = new List<string>();
+
+    [Parameter]
+    public EventCallback<string> OnTabSelected { get; set; }
+
+    private string ActiveTab { get; set; }
+    private int ActiveTabIndex { get; set; } = 0;
+
+    protected override void OnInitialized()
+    {
+        if (TabItems.Count > 0)
+        {
+            ActiveTab = TabItems[0];
+        }
+    }
+
+    private bool IsFirstTab => ActiveTabIndex == 0;
+    private bool IsLastTab => ActiveTabIndex == TabItems.Count - 1;
+
+    private void SelectTab(string tab)
+    {
+        ActiveTab = tab;
+        ActiveTabIndex = TabItems.IndexOf(tab);
+        OnTabSelected.InvokeAsync(tab);
+    }
+
+    private void PreviousTab()
+    {
+        if (ActiveTabIndex > 0)
+        {
+            ActiveTabIndex--;
+            ActiveTab = TabItems[ActiveTabIndex];
+            OnTabSelected.InvokeAsync(ActiveTab);
+        }
+    }
+
+    private void NextTab()
+    {
+        if (ActiveTabIndex < TabItems.Count - 1)
+        {
+            ActiveTabIndex++;
+            ActiveTab = TabItems[ActiveTabIndex];
+            OnTabSelected.InvokeAsync(ActiveTab);
+        }
+    }
+}

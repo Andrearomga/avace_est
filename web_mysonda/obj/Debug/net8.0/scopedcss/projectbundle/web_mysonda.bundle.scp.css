@@ -136,215 +136,31 @@
 }
 
 
-/* _content/web_mysonda/Components/Pages/MovimientoCaja.razor.rz.scp.css */
-.movimiento-caja[b-n2vk7527ha] {
-    background-color: #ffffff;
-    padding: 30px;
-    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
-    border-radius: 40px; /* Esquinas redondeadas de 40px */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    width: 723px;
-    height: 450px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: -900px; /* Ajuste de margen si es necesario */
-}
-
-.header[b-n2vk7527ha] {
-    position: relative;
-    background-color: #5A86A3;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: center;
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-    .header h3[b-n2vk7527ha] {
-        color: #000000;
-        margin: 0;
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-.favorito[b-n2vk7527ha] {
-    position: absolute;
-    top: 10px;
-    right: -50px;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-
-    .favorito:hover path[b-n2vk7527ha] {
-        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
-    }
-
-
-.form-content-right[b-n2vk7527ha] {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-.form-group[b-n2vk7527ha] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.date-picker[b-n2vk7527ha] {
-    padding: 10px;
-    width: 180px;
-    height: 40px;
-    border: 0.5px solid #716D6D;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.button-group-right[b-n2vk7527ha] {
-    display: flex;
-    gap: 70px;
-    margin-right: -200px;
-    margin-top: 100px;
-}
-
-.btn-cancelar[b-n2vk7527ha], .btn-imprimir[b-n2vk7527ha] {
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    width: 180px;
-    height: 40px;
-    font-weight: 600;
-}
-
-.btn-cancelar[b-n2vk7527ha] {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 1px solid #000000;
-}
-
-.btn-imprimir[b-n2vk7527ha] {
-    background-color: #000000;
-    color: #fff;
-}
 /* _content/web_mysonda/Components/Pages/ReporteCorporativo.razor.rz.scp.css */
-.reporte-corporativo[b-zrs0drmaec] {
-    background-color: #ffffff;
-    padding: 30px;
-    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
-    border-radius: 40px; /* Esquinas redondeadas de 40px */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    width: 723px;
-    height: 450px;
-    margin: 100px auto;
+.ruta-input-container[b-zrs0drmaec] {
+    margin-top: 300px; /* Espaciado hacia abajo para no interrumpir otros elementos */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: -900px; /* Ajuste de margen si es necesario */
+    right: -330px;
+    align-items: flex-start;
+    position: relative; /* Asegura que el contenedor tenga un contexto para el z-index */
+    z-index: 100; /* Este valor es para asegurarse de que el input esté por encima de otros elementos */
 }
 
-.header[b-zrs0drmaec] {
-    position: relative;
-    background-color: #5A86A3;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: center;
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-    .header h3[b-zrs0drmaec] {
-        color: #000000;
-        margin: 0;
-        font-size: 22px; 
-        font-weight: 600; 
-    }
-
-.favorito[b-zrs0drmaec] {
-    position: absolute;
-    top: 10px;
-    right: -50px;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-}
-
-    .favorito:hover path[b-zrs0drmaec] {
-        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
-    }
-
-.button-group-right[b-zrs0drmaec] {
-    display: flex;
-    gap: 70px;
-    margin-right: -200px;
-    margin-top: 50px;
-}
-
-.btn-cancelar[b-zrs0drmaec], .btn-imprimir[b-zrs0drmaec] {
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+.ruta-label[b-zrs0drmaec] {
     font-size: 16px;
-    width: 180px;
-    height: 40px;
-    font-weight: 600;
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
 }
 
-.btn-cancelar[b-zrs0drmaec] {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 1px solid #000000;
-}
-
-.btn-imprimir[b-zrs0drmaec] {
-    background-color: #000000;
-    color: #fff;
-}
-
-.form-container.box[b-zrs0drmaec] {
+.ruta-input[b-zrs0drmaec] {
+    width: 200%; /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    border-radius: 5px;
     border: 1px solid #B7BABB;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 8px;
-    background-color: #F9F9F9;
-}
-
-.input-group[b-zrs0drmaec] {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.input-text[b-zrs0drmaec] {
-    flex: 1;
-    padding: 5px;
-}
-
-.icon-save[b-zrs0drmaec] {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 5px;
-    margin-left: 5px;
-}
-
-.date-container[b-zrs0drmaec] {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.date-field[b-zrs0drmaec] {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    position: relative; /* Asegura que el input también tenga un contexto para z-index */
+    z-index: 101; /* Asegura que el input esté por encima del contenedor */
 }
 /* _content/web_mysonda/Components/Pages/Reportes.razor.rz.scp.css */
 
@@ -458,16 +274,16 @@
 .resumen-operaciones[b-zguovx0gvn] {
     background-color: #ffffff;
     padding: 30px;
-    border: 1px solid #B7BABB; /* Borde de 1px con color #B7BABB */
-    border-radius: 40px; /* Esquinas redondeadas de 40px */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    border: 1px solid #B7BABB;
+    border-radius: 40px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     width: 723px;
     height: 450px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: -900px; /* Ajuste de margen si es necesario */
+    position: fixed;
+    top: 140px;
+    left: 57%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 .header[b-zguovx0gvn] {
@@ -476,35 +292,38 @@
     padding: 5px;
     border-radius: 8px;
     text-align: center;
-    width: 80%;
+    width: 78%;
+    right: -70px;
+    align-items:center;
     margin-bottom: 30px;
 }
 
     .header h3[b-zguovx0gvn] {
         color: #000000;
         margin: 0;
-        font-size: 22px; 
-        font-weight: 600; 
+        font-size: 22px;
+        font-weight: 600;
+       
     }
 
 .favorito[b-zguovx0gvn] {
     position: absolute;
     top: 10px;
-    right: -50px;
+    right: -60px; /* Ajustado a 10px para no salirse del contenedor */
     cursor: pointer;
     width: 24px;
     height: 24px;
 }
 
     .favorito:hover path[b-zguovx0gvn] {
-        fill: #22C55E; /* Cambia a dorado al pasar el cursor */
+        fill: #22C55E;
     }
-
 
 .form-content-right[b-zguovx0gvn] {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 30px;
     margin-bottom: 30px;
     font-weight: 600;
 }
@@ -513,7 +332,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 
 .date-picker[b-zguovx0gvn] {
@@ -523,14 +341,15 @@
     border: 0.5px solid #716D6D;
     border-radius: 8px;
     text-align: center;
- 
 }
 
 .button-group-right[b-zguovx0gvn] {
     display: flex;
     gap: 70px;
-    margin-right: -200px;
-    margin-top: 100px;
+    margin-top: 130px;
+    position: absolute;
+    right: 50px;
+    
 }
 
 .btn-cancelar[b-zguovx0gvn], .btn-imprimir[b-zguovx0gvn] {
@@ -768,4 +587,87 @@ input[type="radio"][b-rrbbuocqh6] {
 /* Deslizar hacia la segunda sección */
 #slide2:checked ~ .tabs-container .tabs[b-rrbbuocqh6] {
     transform: translateX(-100%); /* Mueve a la segunda mitad de la barra */
+}
+/* _content/web_mysonda/Components/Pages/TabBar.razor.rz.scp.css */
+.tab-bar[b-16q9jgn4nr] {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 55%; /* Igual al tamaño de .tabs-container */
+    border-radius: 10px;
+    right: -270px;
+    margin-top: 20px;
+    background-color: #5A86A3; /* Fondo azul */
+}
+
+
+
+
+
+.tabs-container[b-16q9jgn4nr] {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor padre */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.tabs[b-16q9jgn4nr] {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.tab[b-16q9jgn4nr] {
+    padding: 5px 10px; /* Tamaño reducido de relleno */
+    cursor: pointer;
+    flex: 1 0 auto;
+    text-align: center;
+    min-width: 12%; /* Ajusta para que las pestañas no sean demasiado pequeñas */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 5px; /* Espacio entre cada botón */
+
+    background-color: transparent; /* Fondo blanco */
+    color: #333; /* Color de texto oscuro para contraste */
+    border: none; /* Sin bordes */
+   
+   
+}
+
+
+/* Estilo para las flechas */
+.arrow[b-16q9jgn4nr] {
+    background: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+    .arrow:hover[b-16q9jgn4nr] {
+        color: #007bff; /* Color de las flechas al pasar el cursor */
+    }
+
+/* Ocultar los checkboxes */
+input[type="radio"][b-16q9jgn4nr] {
+    display: none;
+}
+
+/* Deslizar hacia la primera sección */
+#slide1:checked ~ .tabs-container .tabs[b-16q9jgn4nr] {
+    transform: translateX(0);
+}
+
+/* Deslizar hacia la segunda sección */
+#slide2:checked ~ .tabs-container .tabs[b-16q9jgn4nr] {
+    transform: translateX(-100%); /* Mueve a la segunda mitad de la barra */
+}
+
+.tab.active[b-16q9jgn4nr] {
+    background-color: white; /* Color de fondo cuando está activa */
+    color: #000; /* Color del texto cuando está activa */
+    font-weight: bold; /* Hacer el texto más fuerte */
 }

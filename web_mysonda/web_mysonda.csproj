@@ -7,15 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Components\Pages\DateRangePicker.razor" />
+    <Content Remove="Components\Pages\DropdownCard.razor" />
     <Content Remove="Components\Pages\FinancieroAuditoriarazor.razor" />
+    <Content Remove="Components\Pages\Tabs.razor" />
     <Content Remove="Components\Pages\Tarjeta.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Components\Pages\Counter.razor.css" />
+    <None Remove="Components\Pages\MovimientoCaja.razor.css" />
     <None Remove="Components\Pages\Reporte.css" />
     <None Remove="Components\Pages\StyleSheet.css" />
     <None Remove="Components\Pages\StyleSheet1.css" />
+    <None Remove="Components\Pages\Tabs.razor.css" />
   </ItemGroup>
 
 </Project>

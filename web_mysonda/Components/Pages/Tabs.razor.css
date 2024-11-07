@@ -1,0 +1,79 @@
+﻿/* Estilos básicos */
+.tab-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 52%; /* Igual al tamaño de .tabs-container */
+    border-radius: 10px;
+    right: -295px;
+    margin-top: 20px;
+    background-color: #5A86A3; /* Fondo azul */
+}
+
+.tabs-container {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor padre */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.tabs {
+    display: flex;
+    transition: transform 0.5s ease;
+   
+}
+.tab {
+    /* Tamaño reducido de relleno */
+    cursor: pointer;
+    flex: 1 0 auto;
+    text-align: center;
+    min-width: 12%; /* Ajusta para que las pestañas no sean demasiado pequeñas */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 5px; /* Espacio entre cada botón */
+    background-color: transparent;
+    text-decoration: none;
+    color: #333; /* Color de texto oscuro para contraste */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade una ligera sombra */
+}
+
+
+/* Estilo para las flechas */
+.arrow {
+    background: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #007bff; /* Color de las flechas al pasar el cursor */
+}
+
+/* Ocultar los checkboxes */
+input[type="radio"] {
+    display: none;
+}
+
+/* Deslizar hacia la primera sección */
+#slide1:checked ~ .tabs-container .tabs {
+    transform: translateX(0);
+}
+
+/* Deslizar hacia la segunda sección */
+#slide2:checked ~ .tabs-container .tabs {
+    transform: translateX(-100%); /* Mueve a la segunda mitad de la barra */
+}
+
+.tab.active {
+    background-color: white; /* Verde para la pestaña activa */
+    color: black; /* Texto blanco en la pestaña activa */
+    border-radius: 5px;
+}

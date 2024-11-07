@@ -1,0 +1,61 @@
+﻿@page "/re-GraficoVencidos"
+
+<div class="re-GraficoVencidos">
+    <TabBar TabItems="@tabItems" ActiveTab="@selectedTab" OnTabSelected="OnTabSelected" />
+</div>
+
+<div class="re-GraficoVencidos">
+    <ResumenOperaciones Titulo="Contratos Vencidos"
+                        MostrarFavorito="true"
+                        FechaInicial="@DateTime.Today.AddDays(-7)"
+                        FechaFinal="@DateTime.Today"
+                        TextoCancelar="Cancelar"
+                        TextoImprimir="Imprimir" />
+</div>
+
+@code {
+    private List<string> tabItems = new List<string>
+    {
+        "Contratos Tipo Tasa",
+        "Contratos Vencidos",
+        "Contratos por Status",
+        "Empeños por Mes",
+        "Empeños por Valuador",
+        "Medios Difusión"
+
+
+
+    };
+
+    private string selectedTab = "Contratos Vencidos"; // Pestaña por defecto seleccionada
+
+    private void OnTabSelected(string selectedTab)
+    {
+        this.selectedTab = selectedTab;
+        Console.WriteLine($"Tab seleccionado: {selectedTab}");
+    }
+
+    private void Cancelar()
+    {
+        try
+        {
+            // Acción de cancelación
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Cancelar: {ex.Message}");
+        }
+    }
+
+    private void Imprimir()
+    {
+        try
+        {
+            // Acción de impresión
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Imprimir: {ex.Message}");
+        }
+    }
+}

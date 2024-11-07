@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Components
+
+<div class="tab-bar">
+    <!-- Checkboxes ocultos para controlar el desplazamiento -->
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+
+    <!-- Flecha izquierda fija al inicio de la barra -->
+    <label for="slide1" class="arrow left-arrow"><i class="fas fa-chevron-left"></i></label>
+
+    <!-- Contenedor de pestañas -->
+    <div class="tabs-container">
+        <div class="tabs">
+            @foreach (var tab in TabItems)
+            {
+                <button class="tab @(tab == ActiveTab ? "active" : "")" @onclick="() => SelectTab(tab)">
+                    @tab
+                </button>
+            }
+        </div>
+    </div>
+
+    <!-- Flecha derecha fija al final de la barra -->
+    <label for="slide2" class="arrow right-arrow"><i class="fas fa-chevron-right"></i></label>
+</div>
+
+@code {
+    [Parameter]
+    public List<string> TabItems { get; set; } = new List<string>();
+
+    [Parameter]
+    public string ActiveTab { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnTabSelected { get; set; }
+
+    private void SelectTab(string tab)
+    {
+        ActiveTab = tab;
+        OnTabSelected.InvokeAsync(tab);  // Notifica al componente principal
+    }
+}

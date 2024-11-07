@@ -1,0 +1,25 @@
+﻿<div class="date-container">
+    <div class="date-field">
+        <label for="fecha-inicial">Fecha inicial</label>
+        <input type="date" @bind="FechaInicial" id="fecha-inicial" class="date-picker">
+    </div>
+
+    <div class="date-field">
+        <label for="fecha-final">Fecha Final</label>
+        <input type="date" @bind="FechaFinal" id="fecha-final" class="date-picker">
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public DateTime FechaInicial { get; set; }
+
+    [Parameter]
+    public DateTime FechaFinal { get; set; }
+
+    [Parameter]
+    public EventCallback<DateTime> FechaInicialChanged { get; set; }
+
+    [Parameter]
+    public EventCallback<DateTime> FechaFinalChanged { get; set; }
+}

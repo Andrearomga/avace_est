@@ -26,16 +26,84 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/DropdownCard.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEcm9wZG93bkNhcmQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/MovimientoCaja.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb3ZpbWllbnRvQ2FqYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RAseguradoras.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQXNlZ3VyYWRvcmFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RAutorizaciones.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQXV0b3JpemFjaW9uZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RBobeda.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQm9iZWRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RCancelaciones.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ2FuY2VsYWNpb25lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RContratoPDe.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ29udHJhdG9QRGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RContratoPEmp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ29udHJhdG9QRW1wLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RContratoPRe.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ29udHJhdG9QUmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RCuotas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ3VvdGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/ReporteGraficoVenc.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlR3JhZmljb1ZlbmMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RGraficoMedios.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb01lZGlvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RGraficoMes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb01lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RGraficoStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb1N0YXR1cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RGraficoTTasa.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb1RUYXNhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RGraficoValuad.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb1ZhbHVhZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RMonitoreo-mov.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSTW9uaXRvcmVvLW1vdi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RMonitoreore-im.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSTW9uaXRvcmVvcmUtaW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RPTarjeta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSUFRhcmpldGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/Weather.razor]
@@ -58,10 +126,6 @@ build_metadata.AdditionalFiles.CssScope = b-onq7zbiqr2
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-drjnpsa39q
 
-[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/MovimientoCaja.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb3ZpbWllbnRvQ2FqYS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-n2vk7527ha
-
 [C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/ReporteCorporativo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlQ29ycG9yYXRpdm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zrs0drmaec
@@ -77,3 +141,7 @@ build_metadata.AdditionalFiles.CssScope = b-zguovx0gvn
 [C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/RFinanciero_auditoria.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSRmluYW5jaWVyb19hdWRpdG9yaWEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rrbbuocqh6
+
+[C:/Users/andre/source/repos/web_mysonda/web_mysonda/Components/Pages/TabBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUYWJCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-16q9jgn4nr

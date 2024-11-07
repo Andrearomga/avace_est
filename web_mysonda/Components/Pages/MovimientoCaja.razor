@@ -1,44 +1,39 @@
-﻿@page "/movimiento-caja"
-@using System.Globalization
+﻿
+<!-- MovimientosEnCaja.razor -->
+@page "/movimiento-caja"
 
-<div class="movimiento-caja">
-    <div class="header">
-        <h3>Movimiento en Caja</h3>
-        <svg class="favorito" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                  stroke="#000000" stroke-width="2" fill="none" />
-        </svg>
-    </div>
-
-    <div class="form-content-right">
-        <div class="form-group">
-            <label>Fecha inicial</label>
-            <input type="date" @bind="fechaInicial" class="date-picker" />
-        </div>
-
-        <div class="form-group">
-            <label>Fecha final</label>
-            <input type="date" @bind="fechaFinal" class="date-picker" />
-        </div>
-    </div>
-
-    <div class="button-group-right">
-        <button @onclick="Cancelar" class="btn-cancelar">Cancelar</button>
-        <button @onclick="Imprimir" class="btn-imprimir">Imprimir</button>
-    </div>
+<div class="movimientos-caja">
+    <ResumenOperaciones Titulo="Movimientos en Caja"
+                        MostrarFavorito="true"
+                        FechaInicial="@DateTime.Today.AddDays(-7)"
+                        FechaFinal="@DateTime.Today"
+                        TextoCancelar="Cancelar"
+                        TextoImprimir="Imprimir" />
 </div>
 
 @code {
-    private DateTime fechaInicial = DateTime.Now;
-    private DateTime fechaFinal = DateTime.Now.AddDays(1);
-
-    private void Cancelar()
+   private void Cancelar()
+{
+    try
     {
         // Acción de cancelación
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error en Cancelar: {ex.Message}");
+    }
+}
 
-    private void Imprimir()
+private void Imprimir()
+{
+    try
     {
         // Acción de impresión
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error en Imprimir: {ex.Message}");
+    }
+}
+
 }

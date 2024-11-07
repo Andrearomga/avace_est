@@ -2,67 +2,42 @@
 @using System.Globalization
 
 <div class="reporte-corporativo">
-    <div class="header">
-        <h3>Resumen de Operaciones</h3>
-        <svg class="favorito" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                  stroke="#000000" stroke-width="2" fill="none" />
-        </svg>
-    </div>
+    <ResumenOperaciones Titulo="Reporte Corporativo"
+                        MostrarFavorito="true"
+                        FechaInicial="@DateTime.Today.AddDays(-7)"
+                        FechaFinal="@DateTime.Today"
+                        TextoCancelar="Cancelar"
+                        TextoImprimir="Imprimir" />
 
-    <div class="form-container box">
-        <label for="path">Guardar En:</label>
-        <div class="input-group">
-            <input @bind="FilePath" type="text" id="path" class="input-text" readonly>
-            <button @onclick="OpenFilePicker" class="icon-save">💾</button>
-            <input type="file" id="fileInput" style="display: none;" @onchange="HandleFileSelected">
-        </div>
-
-        <div class="date-container">
-            <div class="date-field">
-                <label for="fecha-inicial">Fecha inicial</label>
-                <input type="date" @bind="fechaInicial" id="fecha-inicial" class="date-picker">
-            </div>
-
-            <div class="date-field">
-                <label for="fecha-final">Fecha final</label>
-                <input type="date" @bind="fechaFinal" id="fecha-final" class="date-picker">
-            </div>
-        </div>
-    </div>
-
-    <div class="button-group-right">
-        <button @onclick="Cancelar" class="btn-cancelar">Cancelar</button>
-        <button @onclick="Imprimir" class="btn-imprimir">Imprimir</button>
+    <!-- Aquí va el input para la ruta -->
+    <div class="ruta-input-container">
+        <label for="ruta" class="ruta-label">Ruta:</label>
+        <input type="text" id="ruta" class="ruta-input" placeholder="Introduce la ruta..." />
     </div>
 </div>
 
 @code {
-    private string FilePath { get; set; } = @"C:\MySonda\ReportesExcel\CORPORATIVO";
-    private DateTime fechaInicial = DateTime.Now;
-    private DateTime fechaFinal = DateTime.Now.AddDays(1);
-
-    private async Task OpenFilePicker()
-    {
-       
-    }
-
-    private void HandleFileSelected(ChangeEventArgs e)
-    {
-        if (e.Value is not null)
-        {
-            var file = e.Value.ToString();
-            FilePath = file;
-        }
-    }
-
     private void Cancelar()
     {
-        // Acción de cancelación
+        try
+        {
+            // Acción de cancelación
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Cancelar: {ex.Message}");
+        }
     }
 
     private void Imprimir()
     {
-        // Acción de impresión
+        try
+        {
+            // Acción de impresión
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en Imprimir: {ex.Message}");
+        }
     }
 }
