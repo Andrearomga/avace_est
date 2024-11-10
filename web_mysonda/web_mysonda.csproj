@@ -1,26 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Components\Pages\DateRangePicker.razor" />
-    <Content Remove="Components\Pages\DropdownCard.razor" />
-    <Content Remove="Components\Pages\FinancieroAuditoriarazor.razor" />
-    <Content Remove="Components\Pages\Tabs.razor" />
-    <Content Remove="Components\Pages\Tarjeta.razor" />
-  </ItemGroup>
+	<!-- Referencias a paquetes de Blazor -->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Forms" Version="8.0.0" />
+		<PackageReference Include="Microsoft.JSInterop" Version="8.0.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Components\Pages\Counter.razor.css" />
-    <None Remove="Components\Pages\MovimientoCaja.razor.css" />
-    <None Remove="Components\Pages\Reporte.css" />
-    <None Remove="Components\Pages\StyleSheet.css" />
-    <None Remove="Components\Pages\StyleSheet1.css" />
-    <None Remove="Components\Pages\Tabs.razor.css" />
-  </ItemGroup>
+	<!-- Otros elementos de tu archivo original -->
+	<ItemGroup>
+		<Content Remove="Components\Pages\DateRangePicker.razor" />
+		<Content Remove="Components\Pages\DropdownCard.razor" />
+		<Content Remove="Components\Pages\FinancieroAuditoriarazor.razor" />
+		<Content Remove="Components\Pages\Tabs.razor" />
+		<Content Remove="Components\Pages\Tarjeta.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Components\Pages\Counter.razor.css" />
+		<None Remove="Components\Pages\MovimientoCaja.razor.css" />
+		<None Remove="Components\Pages\Reporte.css" />
+		<None Remove="Components\Pages\StyleSheet.css" />
+		<None Remove="Components\Pages\StyleSheet1.css" />
+		<None Remove="Components\Pages\Tabs.razor.css" />
+	</ItemGroup>
 
 </Project>

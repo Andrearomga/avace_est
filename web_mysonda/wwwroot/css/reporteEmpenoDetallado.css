@@ -1,0 +1,285 @@
+﻿/* Contenedor principal */
+.reporte-detallado-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 60px;
+    padding: 30px;
+    background: rgba(229, 232, 229, 0.14);
+    border: 1px solid #B7BABB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de los tabs */
+.tabs-detallado {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(14, 77, 115, 0.5);
+    padding: 8px 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 874px;
+    margin: 20px auto;
+    z-index: 2;
+    position: relative;
+}
+
+    .tabs-detallado button {
+        background-color: transparent;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        transition: background-color 0.3s ease;
+    }
+
+    .tabs-detallado .active-detallado {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+.tab-icon-detallado {
+    font-size: 18px;
+    color: #000000;
+    margin-left: auto;
+}
+
+/* Título del reporte */
+.reporte-detallado-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(14, 77, 115, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    width: 874px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reporte-detallado-titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reporte-detallado-titulo h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.icon-fav-detallado {
+    width: 34px;
+    height: 34px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 65px;
+}
+
+    .icon-fav-detallado.activo {
+        filter: brightness(0.5);
+    }
+
+/* Contenedor de filtros */
+.filtros-detallado-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 180px;
+    width: 90%;
+    max-width: 1100px;
+    justify-content: center;
+    column-gap: 110px;
+
+}
+
+.criterios-reporte {
+    position: absolute;
+    width: 262px;
+    height: 29px;
+    left: 59px;
+    top: 183px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Cada contenedor de campo */
+.filtro-detallado {
+    display: flex;
+    flex-direction: column;
+}
+
+    .filtro-detallado label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .filtro-detallado input, .filtro-detallado select {
+        width: 100%;
+        height: 34px;
+        padding: 5px;
+        border: 0.5px solid #716D6D;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+/* Contenedor principal para Resumen/Detalle */
+.resumen-detalle-container {
+    width: 300px; /* Ajusta según sea necesario */
+    padding: 20px;
+    background: #F9F9F9;
+    border: 1px solid #B7BABB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Título */
+.resumen-detalle-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las opciones */
+.resumen-detalle-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+    /* Estilo para cada opción */
+    .resumen-detalle-opciones label {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: #000000;
+        
+    }
+
+    /* Estilo personalizado para los radio buttons */
+    .resumen-detalle-opciones input[type="radio"] {
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        width: 20px !important; /* Tamaño del radio button */
+        height: 20px !important;
+        border: 1px solid #03A65A !important; /* Borde verde */
+        border-radius: 50% !important;
+        margin-right: 8px !important;
+        position: relative !important;
+        cursor: pointer !important;
+    }
+
+        .resumen-detalle-opciones input[type="radio"]:checked::before {
+            content: '' !important;
+            width: 13px !important; /* Tamaño del círculo interior */
+            height: 13px !important;
+            background-color: #03A65A !important; /* Color verde para el círculo interior */
+            border-radius: 50% !important;
+            position: absolute !important;
+            top: 3px !important; /* Ajuste para centrar el círculo interior */
+            left: 3px !important;
+        }
+
+
+
+
+/* Contenedor de botones */
+.button-detallado-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 20px 30px;
+    width: 90%;
+    max-width: 1140px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-top: 65px;
+}
+
+.button-detallado-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-detallado {
+    width: 261px;
+    height: 57px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.limpiar-detallado-button, .cancelar-detallado-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.buscar-detallado-button {
+    background-color: #00AA63;
+    color: #FFFFFF;
+    border: none;
+}
+
+.imprimir-detallado-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Ajuste responsivo para pantallas tipo iPad (pantallas entre 768px y 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .tabs-detallado {
+        width: 90%;
+    }
+
+    .reporte-detallado-container {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .filtros-detallado-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button-detallado-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+}

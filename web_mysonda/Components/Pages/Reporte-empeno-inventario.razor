@@ -1,0 +1,67 @@
+﻿@page "/reporte-empeno-inventario"
+@* Incluir el archivo de CSS *@
+<link href="css/reporteEmpenoInventario.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+@using Microsoft.AspNetCore.Components.Forms
+
+<!-- Cabecera de pestañas -->
+<div class="tabs-detallado">
+    <button>Empeño</button>
+    <button>Histórico</button>
+    <button>Detallado</button>
+    <button class="active-detallado">Inventarios</button>
+    <button>Resumen</button>
+    <i class="fas fa-chevron-right tab-icon-detallado"></i>
+</div>
+
+<div class="reporte-detallado-container">
+    <!-- Título del reporte -->
+    <div class="reporte-detallado-titulo-container">
+        <div class="reporte-detallado-titulo">
+            <h2>Reporte de inventario</h2>
+        </div>
+        <img src="/css/img/favoritos.png" alt="Favorito" class="icon-fav-detallado" onclick="toggleFavorito()">
+    </div>
+
+    <div class="selector-container">
+        <label class="label-empenos">Empeños</label>
+        <div class="select-empenos-container">
+            <select class="select-empenos">
+                <option>Todos</option>
+                <option>Vitrina</option>
+                <option>Apartados</option>
+                <option>Otros</option>
+            </select>
+            <i class="fas fa-caret-down select-icon"></i> <!-- Icono de Font Awesome -->
+        </div>
+        <div class="radio-group-detallado">
+            <label class="radio-label">
+                <input type="radio" name="empenos" value="vitrina" checked> Vitrina
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="empenos" value="apartados"> Apartados
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="empenos" value="otros"> Otros
+            </label>
+        </div>
+    </div>
+
+
+    <!-- Contenedor de botones -->
+    <div class="button-detallado-container">
+        <div class="button-detallado-column">
+            <button class="button-detallado cancelar-detallado-button" @onclick="Cancelar">Cancelar</button>
+        </div>
+        <div class="button-detallado-column">
+            <button class="button-detallado imprimir-detallado-button" @onclick="Imprimir">Imprimir</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string EmpeñoSeleccionado { get; set; } = "Vitrina";
+
+    private void Cancelar() { /* Lógica de cancelación */ }
+    private void Imprimir() { /* Lógica de impresión */ }
+}

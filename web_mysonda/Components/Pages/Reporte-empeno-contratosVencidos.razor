@@ -1,0 +1,169 @@
+﻿@page "/reporte-empeno-contratosVencidos"
+@* Incluir el archivo de CSS *@
+<link href="css/reporteEmpenoContratosVencidos.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+@using Microsoft.AspNetCore.Components.Forms
+
+<!-- Cabecera de pestañas -->
+<div class="tabs-detallado">
+    <i class="fas fa-chevron-right tab-icon-detallado"></i>
+    <button class="active-detallado">Contratos Vencidos</button>
+    <button>Pase a remate</button>
+    <button>Detallado</button>
+    <button>Inventarios</button>
+    <button>Resumen</button>
+   
+</div>
+
+<div class="reporte-detallado-container">
+    <!-- Título del reporte -->
+    <div class="reporte-detallado-titulo-container">
+        <div class="reporte-detallado-titulo">
+            <h2>Contratos Vencidos</h2>
+        </div>
+        <img src="/css/img/favoritos.png" alt="Favorito" class="icon-fav-detallado" onclick="toggleFavorito()">
+    </div>
+
+    <div class="filtros-container">
+    <!-- Columna izquierda -->
+    <div class="filtro-columna">
+        <div class="filtro">
+            <label for="fecha-desde">Desde</label>
+            <div class="input-date-container">
+                <InputDate id="fecha-desde" @bind-Value="FechaDesde" />
+                <img src="/css/img/calendario.png" alt="Calendario" class="input-date-icon" />
+            </div>
+        </div>
+        <div class="filtro">
+            <label for="contrato">Contrato</label>
+            <InputText id="contrato" @bind-Value="Contrato" />
+        </div>
+    </div>
+
+    <div class="filtro-a">A</div>
+
+    <!-- Columna derecha -->
+    <div class="filtro-columna">
+        <div class="filtro">
+            <label for="fecha-hasta">Hasta</label>
+            <div class="input-date-container">
+                <InputDate id="fecha-hasta" @bind-Value="FechaHasta" />
+                <img src="/css/img/calendario.png" alt="Calendario" class="input-date-icon" />
+            </div>
+        </div>
+        <div class="filtro">
+            <label for="contrato-a" class="hidden-label">A</label>
+            <InputText id="contrato-a" @bind-Value="ContratoA" />
+        </div>
+    </div>
+</div>
+
+<!-- Contrato mayores a (ocupa toda la fila) -->
+<div class="input-grande-container">
+    <label class="filtro-label">Contratos mayores a</label>
+    <InputNumber id="contrato-mayores" @bind-Value="ContratosMayoresA" class="input-grande" />
+</div>
+
+    <div class="filtros-ordenados-container">
+        <!-- Sección Ordenado por -->
+        <div class="filtro-ordenado">
+            <label class="filtro-label">Ordenado por</label>
+            <div class="grid-layout-ordenado">
+                <!-- Columna izquierda -->
+                <div>
+                    <input type="radio" id="contrato" name="ordenar" value="contrato" />
+                    <label for="contrato">Contrato</label>
+                </div>
+                <div>
+                    <input type="radio" id="vencimiento" name="ordenar" value="vencimiento" />
+                    <label for="vencimiento">Vencimiento</label>
+                </div>
+                <div>
+                    <input type="radio" id="comercializacion" name="ordenar" value="comercializacion" />
+                    <label for="comercializacion">Comercialización</label>
+                </div>
+                <div>
+                    <input type="radio" id="fecha" name="ordenar" value="fecha" />
+                    <label for="fecha">Fecha</label>
+                </div>
+                <div>
+                    <input type="radio" id="cliente" name="ordenar" value="cliente" />
+                    <label for="cliente">Cliente</label>
+                </div>
+                <div>
+                    <input type="radio" id="dias-vencidos" name="ordenar" value="dias-vencidos" />
+                    <label for="dias-vencidos">Días Vencidos</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Filtro -->
+        <div class="filtro-seleccion">
+            <label class="filtro-label">Filtro</label>
+            <div class="grid-layout-filtro">
+                <div>
+                    <input type="radio" id="plazo" name="filtro" value="plazo" />
+                    <label for="plazo">Plazo (Vencimiento)</label>
+                </div>
+                <div>
+                    <input type="radio" id="fecha-comercializacion" name="filtro" value="fecha-comercializacion" />
+                    <label for="fecha-comercializacion">Fecha Comercialización</label>
+                </div>
+                <div>
+                    <input type="radio" id="todos" name="filtro" value="todos" />
+                    <label for="todos">Todos</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contenedor de botones -->
+    <div class="button-detallado-container">
+        <div class="button-detallado-column">
+            <button class="button-detallado cancelar-detallado-button" @onclick="Cancelar">Cancelar</button>
+        </div>
+        <div class="button-detallado-column">
+            <button class="button-detallado buscar-detallado-button" @onclick="Buscar">Buscar</button>
+        </div>
+    </div>
+    <div class="tabla-container">
+        <table class="tabla-resultados">
+            <thead>
+                <tr>
+                    <th>Contrato</th>
+                    <th>Fecha</th>
+                    <th>Vence</th>
+                    <th>Cliente</th>
+                    <th>Celular</th>
+                    <th>Telefono</th>
+                    <th>Avaluo</th>
+                    <th>Prestamo</th>
+                    <th>Dias Vencidos</th>
+                    <th>Tipo Tasa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td colspan="10">No hay datos disponibles</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+     private DateTime? FechaDesde { get; set; }
+    private DateTime? FechaHasta { get; set; }
+    private string Contrato { get; set; }
+    private string ContratoA { get; set; }
+    private decimal? ContratosMayoresA { get; set; }
+    private string OrdenarPor { get; set; } = "Fecha";
+    private string TipoContrato { get; set; } = "Pagados";
+    private string EmpeñoSeleccionado { get; set; } = "Vitrina";
+
+    private void Cancelar() { /* Lógica de cancelación */ }
+    private void Buscar() { /* Lógica de búsqueda */ }
+}

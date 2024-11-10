@@ -1,0 +1,226 @@
+﻿/* Contenedor principal */
+.reporte-detallado-container {
+    position: relative;
+    width: 1200px;
+    height:900px;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 60px;
+    padding: 30px;
+    background: rgba(229, 232, 229, 0.14);
+    border: 1px solid #B7BABB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de los tabs */
+.tabs-detallado {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(14, 77, 115, 0.5);
+    padding: 8px 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 874px;
+    margin: 20px auto;
+    z-index: 2;
+    position: relative;
+}
+
+    .tabs-detallado button {
+        background-color: transparent;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        transition: background-color 0.3s ease;
+    }
+
+    .tabs-detallado .active-detallado {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+.tab-icon-detallado {
+    font-size: 18px;
+    color: #000000;
+    margin-left: auto;
+}
+
+/* Título del reporte */
+.reporte-detallado-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(14, 77, 115, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 56px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    width: 874px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reporte-detallado-titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reporte-detallado-titulo h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.icon-fav-detallado {
+    width: 34px;
+    height: 34px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 65px;
+}
+
+    .icon-fav-detallado.activo {
+        filter: brightness(0.5);
+    }
+
+/* Estilo para el selector y opciones */
+/* Contenedor del grupo select y opciones */
+.selector-container {
+    width: 700px; /* Ajusta según lo necesario */
+    height: auto; /* Permite que el contenedor crezca según el contenido */
+    background: #FFFFFF; /* Fondo blanco */
+    border: 1px solid #B7BABB; /* Borde delgado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 40px; /* Espaciado interno */
+    margin: 100px auto; /* Centra el contenedor */
+    gap: 20px; /* Espaciado entre el select y los radio buttons */
+}
+
+.select-empenos-container {
+    width: 474px; /* Ancho del recuadro */
+    height: 53px; /* Altura del recuadro */
+    background: rgba(255, 255, 255, 0.5);
+    border: 0.5px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+
+/* Contenedor de botones */
+.button-detallado-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 20px 30px;
+    width: 90%;
+    max-width: 1140px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-top: 65px;
+}
+
+.button-detallado-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-detallado {
+    width: 261px;
+    height: 57px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.limpiar-detallado-button, .cancelar-detallado-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+
+
+.imprimir-detallado-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+}
+/* Contenedor de los botones de opción */
+.opciones-fechas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* Espacio entre los botones de opción */
+    margin-top: 180px; /* Ajusta el espacio superior si es necesario */
+    margin-bottom: 480px; /* Ajusta el espacio inferior si es necesario */
+}
+
+/* Estilos para los botones de opción */
+.radio-button {
+    display: none; /* Ocultar el input para personalizar el diseño */
+}
+
+.radio-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    padding-left: 65px; /* Espacio para el círculo */
+}
+
+    /* Círculo exterior (no seleccionado) */
+    .radio-label::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px; /* Ajusta el tamaño del círculo exterior */
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+        background-color: #ffffff;
+    }
+
+/* Círculo interior (cuando está seleccionado) */
+.radio-button:checked + .radio-label::after {
+    content: "";
+    position: absolute;
+    left: 5px; /* Ajusta la posición horizontal del círculo interior */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px; /* Tamaño del círculo interior */
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+}

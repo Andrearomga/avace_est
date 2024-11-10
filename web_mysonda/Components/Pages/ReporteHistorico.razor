@@ -1,0 +1,159 @@
+﻿@page "/reporte-historico"
+@* Incluir el archivo de CSS *@
+<link href="css/reporteHistorico.css" rel="stylesheet" />
+
+
+    <!-- Cabecera de pestañas -->
+    <div class="tabs">
+        <button>Empeño</button>
+        <button class="active">Histórico</button>
+        <button>Detallado</button>
+        <button>Inventarios</button>
+        <button>Resumen</button>
+    <i class="fas fa-chevron-right tab-icon"></i>
+</div>
+    <div class="reporte-container">
+    <!-- Título del reporte -->
+    <div class="reporte-titulo-container">
+        <div class="reporte-titulo">
+            <h2>Reporte Histórico</h2>
+        </div>
+        <img src="/css/img/favoritos.png" alt="Favorito" class="icon-fav" onclick="toggleFavorito()">
+    </div>
+
+    <div class="filtros-container">
+        <!-- Columna izquierda -->
+        <div class="filtro-columna">
+            <div class="filtro">
+                <label for="fecha-desde">Desde</label>
+                <div class="input-date-container">
+                    <InputDate id="fecha-desde" @bind-Value="FechaDesde" />
+                    <img src="/css/img/calendario.png" alt="Calendario" class="input-date-icon" />
+                </div>
+            </div>
+            <div class="filtro">
+                <label for="contrato">Contrato</label>
+                <InputText id="contrato" @bind-Value="Contrato" />
+            </div>
+            <div class="filtro">
+                <label for="contrato-mayores">Contratos mayores a</label>
+                <InputNumber id="contrato-mayores" @bind-Value="ContratosMayoresA" />
+            </div>
+            <div class="filtro">
+                <label for="tipo-contrato">Tipo de contrato</label>
+                <InputSelect id="tipo-contrato" @bind-Value="TipoContrato">
+                    <option value="Pagados">Pagados</option>
+                    <option value="Nopagados">No Pagados</option>
+                    <option value="Cancelados">Cancelados</option>
+                    <option value="AlaVenta">A la Venta</option>
+                    <option value="Todos">Todos</option>
+                </InputSelect>
+            </div>
+        </div>
+        <div class="filtro-a">A</div>
+        <div class="filtro-columna">
+            <div class="filtro">
+                <label for="fecha-hasta">Hasta</label>
+                <div class="input-date-container">
+                    <InputDate id="fecha-hasta" @bind-Value="FechaHasta" />
+                    <img src="/css/img/calendario.png" alt="Calendario" class="input-date-icon" />
+                </div>
+            </div>
+            <div class="filtro">
+                <label for="contrato-a" class="hidden-label">A</label>
+                <InputText id="contrato-a" @bind-Value="ContratoA" />
+            </div>
+            <div class="filtro">
+                <label for="ordenar">Ordenar por</label>
+                <InputSelect id="ordenar" @bind-Value="OrdenarPor">
+                    <option value="Fecha">Fecha</option>
+                    <option value="Contrato">Contrato</option>
+                    <option value="Cliente">Cliente</option>
+                    <option value="Prestamo">Prestamo</option>
+                    <option value="FechaMov">Fecha Movimiento</option>
+
+
+                </InputSelect>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tabla-container">
+        <table class="tabla-resultados">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Contrato</th>
+                    <th>Cliente</th>
+                    <th>Préstamo</th>
+                    <th>Avalúo</th>
+                    <th>Vence</th>
+                    <th>Origen/Folio</th>
+                    <th>Destino/Folio</th>
+                    <th>Capital</th>
+                    <th>Interés</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="10">No hay datos disponibles</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="button-container">
+        <div class="button-column">
+            <button class="button limpiar-button">Limpiar</button>
+            <button class="button cancelar-button">Cancelar</button>
+        </div>
+        <div class="button-column">
+            <button class="button buscar-button">Buscar</button>
+            <button class="button imprimir-button">Imprimir</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+@code {
+    // Variables para los filtros
+    private DateTime? FechaDesde { get; set; }
+    private DateTime? FechaHasta { get; set; }
+    private string Contrato { get; set; }
+    private string ContratoA { get; set; }
+    private decimal? ContratosMayoresA { get; set; }
+    private string OrdenarPor { get; set; } = "Fecha";
+    private string TipoContrato { get; set; } = "Pagados";
+
+    // Métodos para manejar la lógica de los botones
+    private void Limpiar()
+    {
+        FechaDesde = null;
+        FechaHasta = null;
+        Contrato = string.Empty;
+        ContratoA = string.Empty;
+        ContratosMayoresA = null;
+        OrdenarPor = "Fecha";
+        TipoContrato = "Pagados";
+    }
+
+    private void Buscar()
+    {
+        // Aquí iría la lógica de búsqueda
+    }
+
+    private void Cancelar()
+    {
+        // Lógica para cancelar o limpiar la operación
+    }
+
+    private void Imprimir()
+    {
+        // Lógica para imprimir el reporte
+    }
+}

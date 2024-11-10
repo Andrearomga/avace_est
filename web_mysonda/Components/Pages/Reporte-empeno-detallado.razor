@@ -1,0 +1,177 @@
+﻿@page "/reporte-empeno-detallado"
+@* Incluir el archivo de CSS *@
+<link href="css/reporteEmpenoDetallado.css" rel="stylesheet" />
+@using Microsoft.AspNetCore.Components.Forms
+
+<!-- Cabecera de pestañas -->
+<div class="tabs-detallado">
+    <button>Empeño</button>
+    <button>Histórico</button>
+    <button class="active-detallado">Detallado</button>
+    <button>Inventarios</button>
+    <button>Resumen</button>
+    <i class="fas fa-chevron-right tab-icon-detallado"></i>
+</div>
+
+<div class="reporte-detallado-container">
+    <!-- Título del reporte -->
+    <div class="reporte-detallado-titulo-container">
+        <div class="reporte-detallado-titulo">
+            <h2>Reporte</h2>
+        </div>
+        <img src="/css/img/favoritos.png" alt="Favorito" class="icon-fav-detallado" onclick="toggleFavorito()">
+    </div>
+    <div class="criterios-reporte">
+        <p>Criterios del Reporte</p>
+    </div>
+
+    <!-- Contenedor de filtros -->
+    <div class="filtros-detallado-container">
+        <div class="filtro-detallado">
+            <label for="reporte">Reporte</label>
+            <InputSelect id="reporte" @bind-Value="Reporte">
+                <option value="Empoeno">Empeños</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Compras">Compras</option>
+            </InputSelect>
+        </div>
+        <div class="filtro-detallado">
+            <label for="fecha-inicial">Fecha Inicial</label>
+            <InputDate id="fecha-inicial" @bind-Value="FechaInicial" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="fecha-final">Fecha Final</label>
+            <InputDate id="fecha-final" @bind-Value="FechaFinal" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="folio-inicial">Folio Inicial</label>
+            <InputText id="folio-inicial" @bind-Value="FolioInicial" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="folio-final">Folio Final</label>
+            <InputText id="folio-final" @bind-Value="FolioFinal" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="categoria">Categoría</label>
+            <InputSelect id="categoria" @bind-Value="Categoria">
+                <option value="Todos">Todos</option>
+                <option value="Oro">Oro</option>
+                <option value="Electronico">Electronico</option>
+                <option value="Relojes">Relojes</option>
+                <option value="Otros">Otros</option>
+                <option value="Pagados">Pagados</option>
+                <option value="Documentos">Documentos</option>
+                <option value="Vici">Vicicleta</option>
+                <option value="herra">Herramientas</option>
+                <option value="Platas">Platas</option>
+            </InputSelect>
+        </div>
+        <div class="filtro-detallado">
+            <label for="cliente">Cliente</label>
+            <InputText id="cliente" @bind-Value="Cliente" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="empleado">Empleado</label>
+            <InputText id="empleado" @bind-Value="Empleado" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="origen">Origen</label>
+            <InputSelect id="origen" @bind-Value="Origen">
+                <option value="emp">Empeños</option>
+                <option value="ref">Origen</option>
+            </InputSelect>
+        </div>
+        <div class="filtro-detallado">
+            <label for="destino">Destino</label>
+            <InputSelect id="destino" @bind-Value="Destino">
+                <option value="Pago Interes">Pago Interes</option>
+                <option value="retiro">Retiros</option>
+                <option value="Fundicion">Fundicion</option>
+            </InputSelect>
+        </div>
+        <div class="filtro-detallado">
+            <label for="importe-mayor">Importes mayores a</label>
+            <InputNumber id="importe-mayor" @bind-Value="ImportesMayoresA" />
+        </div>
+        <div class="filtro-detallado">
+            <label for="ordenar">Ordenar por</label>
+            <InputSelect id="ordenar" @bind-Value="OrdenarPor">
+                <option value="Fecha">Fecha</option>
+                <option value="Contrato">Contrato</option>
+                <option value="Cliente">Cliente</option>
+                <option value="Importes">Importes</option>
+                 <option value="fem">Fecha Movimiento</option>
+            </InputSelect>
+        </div>
+        <div class="filtro-detallado">
+            <label for="filtros-extra">Filtros extra</label>
+            <InputSelect id="filtros-extra" @bind-Value="ResumenDetalle">
+                <option value="Activos">Activos</option>
+                <option value="Cancelado">Cancelados</option>
+                <option value="Pagados">Pagados</option>
+             
+            </InputSelect>
+        </div>
+
+        <div class="resumen-detalle-container">
+            <h3 class="resumen-detalle-titulo">Resumen/Detalle</h3>
+            <div class="resumen-detalle-opciones">
+                <label>
+                    <input type="radio" name="resumen-detalle" value="si" checked>
+                    Sí
+                </label>
+                <label>
+                    <input type="radio" name="resumen-detalle" value="no">
+                    No
+                </label>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contenedor de botones -->
+    <div class="button-detallado-container">
+        <div class="button-detallado-column">
+            <button class="button-detallado limpiar-detallado-button" @onclick="Limpiar">Limpiar</button>
+            <button class="button-detallado cancelar-detallado-button" @onclick="Cancelar">Cancelar</button>
+        </div>
+        <div class="button-detallado-column">
+            <button class="button-detallado buscar-detallado-button" @onclick="Buscar">Buscar</button>
+            <button class="button-detallado imprimir-detallado-button" @onclick="Imprimir">Imprimir</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string Reporte { get; set; }
+    private DateTime? FechaInicial { get; set; }
+    private DateTime? FechaFinal { get; set; }
+    private string FolioInicial { get; set; }
+    private string FolioFinal { get; set; }
+    private string Categoria { get; set; }
+    private string Cliente { get; set; }
+    private string Empleado { get; set; }
+    private string Origen { get; set; }
+    private string Destino { get; set; }
+    private decimal? ImportesMayoresA { get; set; }
+    private string OrdenarPor { get; set; } = "Fecha";
+    private string ResumenDetalle { get; set; } = "Resumen";
+
+    private void Limpiar() { /* Lógica de limpieza */ }
+    private void Buscar() { /* Lógica de búsqueda */ }
+    private void Cancelar() { /* Lógica de cancelación */ }
+    private void Imprimir() { /* Lógica de impresión */ }
+}

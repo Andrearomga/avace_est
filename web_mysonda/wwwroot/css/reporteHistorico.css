@@ -1,0 +1,317 @@
+﻿.reporte-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 60px;
+    padding: 30px;
+    background: rgba(229, 232, 229, 0.14);
+    border: 1px solid #B7BABB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de los tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(14, 77, 115, 0.5);
+    padding: 8px 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 874px;
+    margin: 20px auto;
+    z-index: 2;
+    position: relative;
+}
+
+    .tabs button {
+        background-color: transparent;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        transition: background-color 0.3s ease;
+    }
+
+    .tabs .active {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+.tab-icon {
+    font-size: 18px;
+    color: #000000;
+    margin-left: auto;
+}
+
+/* Título del reporte */
+.reporte-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(14, 77, 115, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    width: 874px;
+    margin: 0 auto; 
+    margin-top: 15px; 
+    font-weight: bold;
+}
+
+.reporte-titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reporte-titulo h2 {
+    margin: 0;
+    font-size: 25px; 
+    font-weight: bold;
+    color: #000000;
+}
+
+.icon-fav {
+    width: 34px;
+    height: 34px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 65px;
+}
+
+    .icon-fav.activo {
+        filter: brightness(0.5);
+    }
+
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    margin-top: 65px;
+    width: 90%;
+}
+
+.filtro-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filtro-columna label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filtro input, .filtro select, .input-date-container input[type="date"] {
+    width: 140%;
+    height: 34px;
+    padding: 5px;
+    border: 0.5px solid #716D6D;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.input-date-container {
+    position: relative;
+    display: inline-block;
+    width: 140%;
+}
+
+    .input-date-container input[type="date"] {
+        width: 100%;
+        padding-right: 30px;
+        height: 34px;
+        padding: 5px;
+        border: 0.5px solid #716D6D;
+        border-radius: 8px;
+        font-size: 16px;
+        -webkit-appearance: none;
+    }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+}
+
+.input-date-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+}
+
+.filtro-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -65px;
+    position: relative;
+    left: 35px;
+}
+
+.hidden-label {
+    visibility: hidden;
+}
+
+/* Contenedor de la tabla con scroll */
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    overflow-x: auto;
+}
+
+.tabla-resultados {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #C0C0C0;
+    table-layout: fixed; 
+}
+
+    /* Encabezados y celdas alineados */
+    .tabla-resultados th, .tabla-resultados td {
+        border: 0.5px solid #C0C0C0;
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /* Encabezado fijo */
+    .tabla-resultados thead th {
+        position: sticky;
+        top: 0;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+/* Contenedor para el desplazamiento */
+.tabla-scroll {
+    max-height: 200px; 
+    overflow-y: auto;
+}
+
+    /* Estilo personalizado de la barra de desplazamiento */
+    .tabla-scroll::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .tabla-scroll::-webkit-scrollbar-thumb {
+        background-color: #C0C0C0;
+        border-radius: 4px;
+    }
+
+    .tabla-scroll::-webkit-scrollbar-track {
+        background-color: #F0F0F0;
+        border-radius: 4px;
+    }
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 20px 30px;
+    width: 90%;
+    max-width: 1140px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    width: 261px;
+    height: 57px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.limpiar-button, .cancelar-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.buscar-button {
+    background-color: #00AA63;
+    color: #FFFFFF;
+    border: none;
+}
+
+.imprimir-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Ajuste responsivo para pantallas tipo iPad (pantallas entre 768px y 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .tabs {
+        width: 90%;
+    }
+
+    .reporte-container {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .tabs button {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+}

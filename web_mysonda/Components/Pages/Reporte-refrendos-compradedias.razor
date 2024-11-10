@@ -1,0 +1,69 @@
+﻿@page "/reporte-refrendo-compradedias"
+@* Incluir el archivo de CSS *@
+<link href="css/reporteCompraDeDias.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+@using Microsoft.AspNetCore.Components.Forms
+
+<!-- Cabecera de pestañas -->
+<!-- Cabecera de pestañas -->
+<div class="tabs-detallado">
+    <button>
+        Contratos Vencidos
+    </button>
+    <button>Pase a Remate</button>
+    <button>Empeños</button>
+    <button>Desempeños</button>
+    <button class="active-detallado dropdown-button">Refrendos  <img src="/css/img/mas.png" alt="Deslizar menú" class="dropdown-icon"></button>
+    <i class="fas fa-chevron-right tab-icon-detallado"></i>
+</div>
+
+
+
+
+<div class="reporte-detallado-container">
+    <!-- Título del reporte -->
+    <div class="reporte-detallado-titulo-container">
+        <div class="reporte-detallado-titulo">
+            <h2>Reporte Refrendos</h2>
+        </div>
+        <img src="/css/img/favoritos.png" alt="Favorito" class="icon-fav-detallado" onclick="toggleFavorito()">
+    </div>
+
+
+    <div class="fecha-container">
+        <div class="fecha-item">
+            <label class="fecha-label">Fecha inicial</label>
+            <div class="input-date-container">
+                <InputDate id="fecha-inicial" @bind-Value="FechaInicial" class="input-fecha" />
+                <img src="/css/img/calendario.png" alt="Calendario" class="imagen-calendario" />
+            </div>
+
+        </div>
+        <div class="fecha-item">
+            <label class="fecha-label">Fecha final</label>
+            <div class="input-date-container">
+                <InputDate id="fecha-inicial" @bind-Value="FechaInicial" class="input-fecha" />
+                <img src="/css/img/calendario.png" alt="Calendario" class="imagen-calendario" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de botones -->
+    <div class="button-detallado-container">
+        <div class="button-detallado-column">
+            <button class="button-detallado cancelar-detallado-button" @onclick="Cancelar">Cancelar</button>
+        </div>
+        <div class="button-detallado-column">
+            <button class="button-detallado imprimir-detallado-button" @onclick="Imprimir">Imprimir</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    // Variables de fecha para el InputDate
+    private DateTime? FechaInicial { get; set; }
+    private DateTime? FechaFinal { get; set; }
+
+    private void Cancelar() { /* Lógica de cancelación */ }
+    private void Imprimir() { /* Lógica de impresión */ }
+}

@@ -1,0 +1,167 @@
+﻿/* Contenedor principal del Dashboard */
+.main-content {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+
+/* Cuadrícula de botones */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botones del Dashboard */
+.grid-item {
+    background-color: #4DA1FF; 
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:nth-child(6) .icon-img {
+    width: 30px; 
+    height: auto;
+}
+
+.grid-item i {
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
+
+.grid-item img {
+    width: 40px; 
+    height: auto;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.grid-item p {
+    margin: 0;
+}
+
+/* Empreños */
+.grid-item:nth-child(1) {
+    background-color: #4DA1FF;
+}
+
+/* Desempeños */
+.grid-item:nth-child(2) {
+    background-color: #22C55E;
+}
+
+/* Refrendos */
+.grid-item:nth-child(3) {
+    background-color: #EAB308;
+}
+
+/* Consulta */
+.grid-item:nth-child(4) {
+    background-color: #A855F7;
+}
+
+/* Pagos Fijos */
+.grid-item:nth-child(5) {
+    background-color: #EC4899;
+}
+
+/* Cotizar Empeño */
+.grid-item:nth-child(6) {
+    background-color: #6366F1;
+}
+
+/* Búsqueda de Contrato */
+.grid-item:nth-child(7) {
+    background-color: #EF4444;
+}
+
+/* Mensajes de Contratos */
+.grid-item:nth-child(8) {
+    background-color: #14B8A6;
+}
+
+/* Registrar Ubicación */
+.grid-item:nth-child(9) {
+    background-color: #FFA500;
+}
+
+/* Reportes */
+.grid-item:nth-child(10) {
+    background-color: #06B6D4;
+}
+
+/* Pagar Empeño */
+.grid-item:nth-child(11) {
+    background-color: #84CC16;
+}
+
+/* Ajustes de las imágenes que reemplazan los íconos */
+.icon-img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Elimina el subrayado de los enlaces */
+.grid-item {
+    padding: 25px;
+    text-decoration: none; 
+    color: white; 
+}
+
+.grid-item:hover {
+    text-decoration: none; 
+}
+
+.grid-item:nth-child(5) .icon-img {
+    width: 40px; 
+}
+
+.grid-container {
+    gap: 45px; 
+}
+
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+
+    .grid-item {
+        padding: 15px; 
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    .grid-item {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+}

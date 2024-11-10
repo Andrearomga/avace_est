@@ -1,0 +1,148 @@
+﻿.polygon-background {
+    position: fixed;
+    width: 370vw; /* Incrementamos considerablemente el ancho */
+    height: 200vh; /* Incrementamos la altura */
+    left: -200vw; /* Ajustamos la posición más hacia la izquierda */
+    top: -50vh; /* Mueve hacia arriba para cubrir el espacio */
+    transform: rotate(-54.13deg);
+    background: rgba(14, 77, 115, 0.5);
+    z-index: -1;
+}
+
+/* Contenedor de login */
+.login-container {
+    padding: 95px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+    border: 1px solid #0E4D73; 
+}
+
+/* Contenedor del logotipo */
+.logo-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Campos de texto con iconos personalizados */
+.input-icon {
+    position: relative;
+   
+}
+
+    .input-icon input {
+        width: 100%;
+        padding: 10px 120px 1px 15px;
+        border: 1px solid #D3D3D3;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+.icon-img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: auto;
+}
+
+
+/* Botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.buttonEliminar,
+.buttonIngresar {
+    width: 48%;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonEliminar {
+    background-color: transparent;
+    color: #0E4D73;
+    border: 1px solid #0E4D73;
+}
+
+.buttonIngresar {
+    background-color: #0E4D73;
+    color: #ffffff;
+    border: none;
+}
+
+/* Título */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0E4D73;
+}
+
+/* Imagen del título */
+.image1 {
+    width: 35px;
+    height: 35px;
+    background: url('img/img1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input[type="password"]::-ms-reveal, /* Para Internet Explorer y Edge */
+input[type="password"]::-ms-clear, /* Para Internet Explorer y Edge */
+input[type="password"]::-webkit-credentials-auto-fill-button, /* Para Chrome */
+input[type="password"]::-webkit-input-placeholder {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .polygon-background {
+        width: 250vw;
+        height: 150vh;
+        left: -125vw;
+        top: -25vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .polygon-background {
+        width: 300vw;
+        height: 200vh;
+        left: -150vw;
+        top: -50vh;
+    }
+}
