@@ -1,0 +1,56 @@
+﻿@page "/clienteEstadoCuenta"
+@* Incluir el archivo de CSS *@
+<link href="css/reporteEmpenoInventario.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+@using Microsoft.AspNetCore.Components.Forms
+
+<!-- Cabecera de pestañas -->
+<div class="tabs-detallado">
+    <button>Movimiento</button>
+    <button>Estado de cuenta</button>
+    
+    <i class="fas fa-chevron-right tab-icon-detallado"></i>
+</div>
+
+<div class="reporte-detallado-container">
+    <!-- Título del reporte -->
+    <div class="reporte-detallado-titulo-container">
+        <div class="reporte-detallado-titulo">
+            <h2>Estado de cuenta punto</h2>
+        </div>
+        <img src="/css/img/favoritos.png" alt="Favorito" class="icon-fav-detallado" onclick="toggleFavorito()">
+    </div>
+
+    <div class="selector-container">
+       
+        
+            <div class="formulario-busqueda">
+            <input type="text" placeholder="Número de Tarjeta" class="input-texto" <i class="fa-solid fa-magnifying-glass"></i> />
+            <button class="boton-buscar">Buscar</button>
+
+            
+            </div>
+        
+           
+        
+       
+    </div>
+
+
+    <!-- Contenedor de botones -->
+    <div class="button-detallado-container">
+        <div class="button-detallado-column">
+            <button class="button-detallado cancelar-detallado-button" @onclick="Cancelar">Cancelar</button>
+        </div>
+        <div class="button-detallado-column">
+            <button class="button-detallado imprimir-detallado-button" @onclick="Imprimir">Imprimir</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string EmpeñoSeleccionado { get; set; } = "Vitrina";
+
+    private void Cancelar() { /* Lógica de cancelación */ }
+    private void Imprimir() { /* Lógica de impresión */ }
+}

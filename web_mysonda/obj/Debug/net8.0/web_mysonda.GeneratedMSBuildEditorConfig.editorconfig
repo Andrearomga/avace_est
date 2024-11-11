@@ -9,231 +9,239 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = web_mysonda
 build_property.RootNamespace = web_mysonda
-build_property.ProjectDir = C:\Users\esmer\Source\Repos\avace_est\web_mysonda\
+build_property.ProjectDir = C:\Users\danir\OneDrive\Escritorio\avace_est\web_mysonda\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\esmer\Source\Repos\avace_est\web_mysonda
+build_property.MSBuildProjectDirectory = C:\Users\danir\OneDrive\Escritorio\avace_est\web_mysonda
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/App.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Counter.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Empeno-resumen.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Empeno-resumen.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBlbm8tcmVzdW1lbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Error.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Home.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/MovimientoCaja.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/MovimientoCaja.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb3ZpbWllbnRvQ2FqYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RAseguradoras.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RAseguradoras.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQXNlZ3VyYWRvcmFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RAutorizaciones.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RAutorizaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQXV0b3JpemFjaW9uZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RBobeda.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RBobeda.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQm9iZWRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RCancelaciones.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RCancelaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ2FuY2VsYWNpb25lcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RContratoPDe.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RContratoPDe.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ29udHJhdG9QRGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RContratoPEmp.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RContratoPEmp.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ29udHJhdG9QRW1wLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RContratoPRe.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RContratoPRe.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ29udHJhdG9QUmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RCuotas.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RCuotas.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSQ3VvdGFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-desempeno-detallado.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-desempeno-detallado.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWRlc2VtcGVuby1kZXRhbGxhZG8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-desempeno-extemporaneo.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-desempeno-extemporaneo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWRlc2VtcGVuby1leHRlbXBvcmFuZW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-desempeno.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-desempeno.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWRlc2VtcGVuby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-empeno-contratosVencidos.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-empeno-contratosVencidos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWVtcGVuby1jb250cmF0b3NWZW5jaWRvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-empeno-detallado.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-empeno-detallado.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWVtcGVuby1kZXRhbGxhZG8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-empeno-empeno.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-empeno-empeno.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWVtcGVuby1lbXBlbm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-empeno-empenos.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-empeno-empenos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWVtcGVuby1lbXBlbm9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-empeno-inventario.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-empeno-inventario.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWVtcGVuby1pbnZlbnRhcmlvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-empeno-paseARemate.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-empeno-paseARemate.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWVtcGVuby1wYXNlQVJlbWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-auxiliar-dia.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-auxiliar-dia.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8tYXV4aWxpYXItZGlhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-auxiliar-personalizado-dia.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-auxiliar-personalizado-dia.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8tYXV4aWxpYXItcGVyc29uYWxpemFkby1kaWEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-auxiliar-personalizado-fecha.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-auxiliar-personalizado-fecha.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8tYXV4aWxpYXItcGVyc29uYWxpemFkby1mZWNoYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-estados-financieros.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-estados-financieros.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8tZXN0YWRvcy1maW5hbmNpZXJvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-gastos.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-gastos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8tZ2FzdG9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-ingresos-detallado.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-ingresos-detallado.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8taW5ncmVzb3MtZGV0YWxsYWRvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-financiero-ingresos-resumen.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-financiero-ingresos-resumen.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWZpbmFuY2llcm8taW5ncmVzb3MtcmVzdW1lbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-pagos-fijos.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-pagos-fijos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLXBhZ29zLWZpam9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-refrendo-resumen.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-refrendo-resumen.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLXJlZnJlbmRvLXJlc3VtZW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-refrendos-compradedias.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-refrendos-compradedias.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLXJlZnJlbmRvcy1jb21wcmFkZWRpYXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-refrendos-detallados.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-refrendos-detallados.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLXJlZnJlbmRvcy1kZXRhbGxhZG9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reporte-refrendos-extemporaneos.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-refrendos-extemporaneos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLXJlZnJlbmRvcy1leHRlbXBvcmFuZW9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/ReporteGraficoVenc.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/ReporteGraficoVenc.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlR3JhZmljb1ZlbmMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/ReporteHistorico.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/ReporteHistorico.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlSGlzdG9yaWNvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RGraficoMedios.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RGraficoMedios.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb01lZGlvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RGraficoMes.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RGraficoMes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb01lcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RGraficoStatus.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RGraficoStatus.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb1N0YXR1cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RGraficoTTasa.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RGraficoTTasa.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb1RUYXNhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RGraficoValuad.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RGraficoValuad.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSR3JhZmljb1ZhbHVhZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RMonitoreo-mov.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RMonitoreo-mov.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSTW9uaXRvcmVvLW1vdi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RMonitoreore-im.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RMonitoreore-im.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSTW9uaXRvcmVvcmUtaW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RPTarjeta.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Roporte-clienteF-Movimiento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSb3BvcnRlLWNsaWVudGVGLU1vdmltaWVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RPTarjeta.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSUFRhcmpldGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Weather.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Routes.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/_Imports.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Layout/MainLayout.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-onq7zbiqr2
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Layout/NavMenu.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-drjnpsa39q
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/ReporteCorporativo.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reporte-clienteEstadoCuenta.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlLWNsaWVudGVFc3RhZG9DdWVudGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4fmia7o04w
+
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/ReporteCorporativo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlQ29ycG9yYXRpdm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zrs0drmaec
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/Reportes.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/Reportes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-m77me0famc
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/ResumenOperaciones.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/ResumenOperaciones.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXN1bWVuT3BlcmFjaW9uZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zguovx0gvn
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/RFinanciero_auditoria.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/RFinanciero_auditoria.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSRmluYW5jaWVyb19hdWRpdG9yaWEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rrbbuocqh6
 
-[C:/Users/esmer/Source/Repos/avace_est/web_mysonda/Components/Pages/TabBar.razor]
+[C:/Users/danir/OneDrive/Escritorio/avace_est/web_mysonda/Components/Pages/TabBar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUYWJCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-16q9jgn4nr

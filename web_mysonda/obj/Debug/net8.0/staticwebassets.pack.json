@@ -1,159 +1,159 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\web_mysonda.bundle.scp.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\web_mysonda.bundle.scp.css",
       "PackagePath": "staticwebassets\\web_mysonda.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\app.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\empenoResumen.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\empenoResumen.css",
       "PackagePath": "staticwebassets\\css\\empenoResumen.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\formDos.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\formDos.css",
       "PackagePath": "staticwebassets\\css\\formDos.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\barra.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\barra.png",
       "PackagePath": "staticwebassets\\css\\img\\barra.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\calendario.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\calendario.png",
       "PackagePath": "staticwebassets\\css\\img\\calendario.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\editar.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\editar.png",
       "PackagePath": "staticwebassets\\css\\img\\editar.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\expediente.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\expediente.png",
       "PackagePath": "staticwebassets\\css\\img\\expediente.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\favoritos.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\favoritos.png",
       "PackagePath": "staticwebassets\\css\\img\\favoritos.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\firma.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\firma.png",
       "PackagePath": "staticwebassets\\css\\img\\firma.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\historial.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\historial.png",
       "PackagePath": "staticwebassets\\css\\img\\historial.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\img1.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\img1.png",
       "PackagePath": "staticwebassets\\css\\img\\img1.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\img2.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\img2.png",
       "PackagePath": "staticwebassets\\css\\img\\img2.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\img3.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\img3.png",
       "PackagePath": "staticwebassets\\css\\img\\img3.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\logo.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\logo.png",
       "PackagePath": "staticwebassets\\css\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\mas.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\mas.png",
       "PackagePath": "staticwebassets\\css\\img\\mas.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\masiz.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\masiz.png",
       "PackagePath": "staticwebassets\\css\\img\\masiz.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\mensaje.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\mensaje.png",
       "PackagePath": "staticwebassets\\css\\img\\mensaje.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\img\\tarjeta.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\img\\tarjeta.png",
       "PackagePath": "staticwebassets\\css\\img\\tarjeta.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\prestamos.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\prestamos.css",
       "PackagePath": "staticwebassets\\css\\prestamos.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteCompraDeDias.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteCompraDeDias.css",
       "PackagePath": "staticwebassets\\css\\reporteCompraDeDias.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteDesempeno.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteDesempeno.css",
       "PackagePath": "staticwebassets\\css\\reporteDesempeno.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoContratosVencidos.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoContratosVencidos.css",
       "PackagePath": "staticwebassets\\css\\reporteEmpenoContratosVencidos.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoDetallado.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoDetallado.css",
       "PackagePath": "staticwebassets\\css\\reporteEmpenoDetallado.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoInventario.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoInventario.css",
       "PackagePath": "staticwebassets\\css\\reporteEmpenoInventario.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoPaseARemate.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteEmpenoPaseARemate.css",
       "PackagePath": "staticwebassets\\css\\reporteEmpenoPaseARemate.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancieroAuxiliarDia.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancieroAuxiliarDia.css",
       "PackagePath": "staticwebassets\\css\\reporteFinancieroAuxiliarDia.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancieroAuxiliarFecha.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancieroAuxiliarFecha.css",
       "PackagePath": "staticwebassets\\css\\reporteFinancieroAuxiliarFecha.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancieroAuxiliarPersonalizadoDia.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancieroAuxiliarPersonalizadoDia.css",
       "PackagePath": "staticwebassets\\css\\reporteFinancieroAuxiliarPersonalizadoDia.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancierosAuxiliarPersonalizadoFecha.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteFinancierosAuxiliarPersonalizadoFecha.css",
       "PackagePath": "staticwebassets\\css\\reporteFinancierosAuxiliarPersonalizadoFecha.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteHistorico.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteHistorico.css",
       "PackagePath": "staticwebassets\\css\\reporteHistorico.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reportePagosFijos.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reportePagosFijos.css",
       "PackagePath": "staticwebassets\\css\\reportePagosFijos.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\reporteRefrendoResumen.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\reporteRefrendoResumen.css",
       "PackagePath": "staticwebassets\\css\\reporteRefrendoResumen.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\styleDashboard.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\styleDashboard.css",
       "PackagePath": "staticwebassets\\css\\styleDashboard.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\wwwroot\\img\\logo.png",
+      "Id": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {

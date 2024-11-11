@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("web_mysonda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c3cc632a800775c8f582a188b2f61300d6b9b13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+152f1a9faf608711180dc575157c983e65621268")]
 [assembly: System.Reflection.AssemblyProductAttribute("web_mysonda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("web_mysonda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -582,24 +582,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\esmer\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\danir\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\web_mysonda.csproj",
+      "projectUniqueName": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\web_mysonda.csproj",
       "projectName": "web_mysonda",
-      "projectPath": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\web_mysonda.csproj",
-      "packagesPath": "C:\\Users\\esmer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\esmer\\Source\\Repos\\avace_est\\web_mysonda\\obj\\",
+      "projectPath": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\web_mysonda.csproj",
+      "packagesPath": "C:\\Users\\danir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danir\\OneDrive\\Escritorio\\avace_est\\web_mysonda\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\esmer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\danir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
